@@ -57,11 +57,22 @@ permalink: /experience/
 ## Teaching
 
 <p style="text-align:left;">
+  <strong><a href="https://sites.google.com/berkeley.edu/tapeoutclasswiki/semesters/sp23tapeout" target="_blank">EE 194 IC Design Project (Tapeout) @ UC Berkeley</a></strong>
+  <span style="float:right;">Berkeley, CA</span><br>
+  <i>
+    Undergraduate Student Instructor
+    <span style="float:right;">Jan. 2025 &#8212; Present</span>
+  </i>
+  <ul>
+    <li>Project facilitation and mentorship for students designing an accelerated RISC-V CPU using Intel's 16nm process.</li>
+  </ul>
+</p>
+<p style="text-align:left;">
   <strong><a href="https://www.cs61c.org/" target="_blank">CS 61C @ UC Berkeley</a></strong>
   <span style="float:right;">Berkeley, CA</span>
   <br><i>
     Undergraduate Student Instructor
-    <span style="float:right;">Jan. 2024 &#8212; Present</span>
+    <span style="float:right;">Jan. 2024 &#8212; Dec. 2024</span>
   </i>
   <ul>
     <li>Presented conceptual mini-lectures and supported students in laboratory sections, held office hours, developed homework assignments, and proctored exams for a class of 600+ students.</li>
