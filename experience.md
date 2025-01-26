@@ -64,7 +64,7 @@ permalink: /experience/
     <span style="float:right;">Jan. 2025 &#8212; Present</span>
   </i>
   <ul>
-    <li>Project facilitation and mentorship for students designing an accelerated RISC-V CPU using Intel's 16nm process.</li>
+    <li>Infrastructure management and development, project facilitation, and mentorship for students designing two RISC-V SoCs using Intel's 16nm process: one ML-accelerated chip and one audio processing DSP-focused chip.</li>
   </ul>
 </p>
 <p style="text-align:left;">
