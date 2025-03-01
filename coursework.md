@@ -8,7 +8,6 @@ permalink: /coursework/
 Here is a list of some classes I've taken (or plan to take) at UC Berkeley.
 
 ## Spring 2025
-- [EE 144](https://ptolemy.berkeley.edu/projects/embedded/eecsx44/overview.html): Fundamental Algorithms for Systems Modeling, Analysis, and Optimization
 - [CS 168](https://sp25.cs168.io/): Introduction to the Internet: Architecture and Protocols
 - [Decal](https://151tapeout.berkie.ee/): EECS151 Tapeout (SkyWater SKY130; Student-Led Tapeout)
 
