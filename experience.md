@@ -12,13 +12,22 @@ permalink: /experience/
     Santa Clara, CA
   </span><br>
   <i>
+    ASIC Engineer; Tools and Methodology Development
+    <span style="float:right;">
+      Jun. 2025
+    </span>
+  </i>
+  <ul>
+    <!--<li></li>-->
+  </ul>
+  <i>
     Software Engineering Intern (Hardware, DFX Engineering)
     <span style="float:right;">
       May 2024 &#8212; Aug. 2024
     </span>
   </i>
   <ul>
-    <li>Incoming!</li>
+    <!--<li></li>-->
   </ul>
 </p>
 
