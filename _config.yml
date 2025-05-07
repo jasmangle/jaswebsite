@@ -27,7 +27,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url_domain_only: "jasmineangle.dev"
 url: "https://jasmineangle.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: o_O
-github_username:  AdamAngle
+github_username: jasmangle
 
 # Build settings
 remote_theme: BDHU/minimalist
@@ -36,7 +36,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
 
-logo: /assets/img/jasmine.jpg
+logo: /assets/img/jasmine2.jpg
 color-scheme: auto
 
 sidebar_links:
