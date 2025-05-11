@@ -70,10 +70,10 @@ permalink: /experience/
   <span style="float:right;">Berkeley, CA</span><br>
   <i>
     Undergraduate Student Instructor
-    <span style="float:right;">Jan. 2025 &#8212; Present</span>
+    <span style="float:right;">Jan. 2025 &#8212; May 2025</span>
   </i>
   <ul>
-    <li>Infrastructure management and development, project facilitation, and mentorship for students designing two RISC-V SoCs using Intel's 16nm process: one ML-accelerated chip and one audio processing DSP-focused chip.</li>
+    <li>Infrastructure management and development, project facilitation, and mentorship for students designing two RISC-V SoCs using Intel's 16nm process: one ML-accelerated chip (BearlyML'25) and one audio processing DSP-focused chip (DSP'25).</li>
   </ul>
 </p>
 <p style="text-align:left;">
