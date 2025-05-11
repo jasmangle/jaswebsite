@@ -11,6 +11,7 @@ Here is a list of some classes I've taken (or plan to take) at UC Berkeley.
 - [CS 168](https://sp25.cs168.io/): Introduction to the Internet: Architecture and Protocols
 - [Decal](https://151tapeout.berkie.ee/): EECS151 Tapeout (SkyWater SKY130; Student-Led Tapeout)
 - [Decal](https://docs.google.com/document/u/1/d/e/2PACX-1vT5PRppQ6Sr3DH8IOYj8q7VaZGSjdKfX6bKxnbVdo9UgthZ10orER8jqgsd6Xnw9GsUqlju_ZrKPpRE/pub): Esoteric Programming Languages
+- Continued bringup testing of BearlyML'24 (MELLIS) and DSP'24 (COSMIC) chips from previous tapeout.
 
 ## Fall 2024
 - [EE 194](https://www2.eecs.berkeley.edu/Courses/EE194/): IC Design Project: 16nm SoC for IoT (Bringup Course)
