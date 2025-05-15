@@ -54,9 +54,9 @@ sidebar_links:
     link: /blurbs/
   
 sidebar:
-  # - name: LinkedIn
-  #   icon: <i class="fa-brands fa-fw fa-linkedin"></i>
-  #   link: https://linkedin.com/in/adamangle
+  - name: LinkedIn
+    icon: <i class="fa-brands fa-fw fa-linkedin"></i>
+    link: https://linkedin.com/in/jasmangle
   - name: Twitter
     icon: <i class="fa-brands fa-fw fa-x-twitter"></i>
     link: https://x.com/jasmangle
