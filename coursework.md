@@ -5,7 +5,7 @@ permalink: /coursework/
 ---
 # Coursework
 
-Here is a list of some classes I've taken (or plan to take) at UC Berkeley.
+Here is a list of some classes I've taken during my time as an undergraduate at UC Berkeley.
 
 ## Spring 2025
 - [CS 168](https://sp25.cs168.io/): Introduction to the Internet: Architecture and Protocols
