@@ -98,3 +98,11 @@ a:hover .tltp {
   padding: 0.2em 0.3em;
   border-radius: 0.3em;
 }
+
+@media print, screen and (max-width: 480px) {
+
+  .tltp {
+    display: none !important;
+  }
+
+}
