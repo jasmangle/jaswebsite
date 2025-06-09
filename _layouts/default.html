@@ -106,7 +106,7 @@
         {%- include footer.html -%}
       </footer>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    <script src="{{ "/assets/js/common.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/scale.fix.js?v=" | append: site.github.build_revision | relative_url }}"></script>
+    <script src="{{ "/assets/js/common.js?v=" | append: site.github.build_revision | relative_url }}"></script>
   </body>
 </html>
