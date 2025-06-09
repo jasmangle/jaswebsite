@@ -32,7 +32,7 @@
       <div class="sidebar">
         <header>
           {%- if site.logo -%}
-            <img class="img-circle" src="{{site.logo | relative_url}}" alt="Logo">
+            <img class="img-circle" loading="lazy" src="{{site.logo | relative_url}}" alt="Logo">
           {%- endif -%}
           <a class="svg-name-logo" href="{{ "/" | absolute_url }}" aria-label="Navigate to home page" style=" color:white;">
             <svg id="svg-name-logo-det" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 873.5 281.54">
