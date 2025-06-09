@@ -20,8 +20,8 @@ function mkTooltip(e) {
   if (!tooltip) tooltip = genTooltip(anchor);
   const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
   tooltip.style.left = (e.clientX + tooltip.clientWidth + 15 < vw)
-    ? (e.clientX + 10 + "px") : (e.clientX - 5 - tooltip.clientWidth + "px");
-  tooltip.style.top = (e.clientY + tooltip.clientHeight + 10 > 0)
+    ? (e.clientX + 10 + "px") : (e.clientX - tooltip.clientWidth + "px");
+  tooltip.style.top = (e.clientY - tooltip.clientHeight - 5 > 0)
     ? (e.clientY - tooltip.clientHeight + "px") : (e.clientY + 10 + "px");
 }
 var links = document.querySelectorAll('a');
