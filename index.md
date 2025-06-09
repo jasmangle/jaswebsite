@@ -14,7 +14,7 @@ This site is still very much a work-in-progress and only really contains profess
 
 <hr>
 
-## Professional Experience
+## Experience
 ### Industry
 
 <p style="text-align:left;">
