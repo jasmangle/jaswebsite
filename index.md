@@ -4,7 +4,7 @@ layout: default
 ---
 
 # Hi there!
-I'm Jasmine, a hardware enjoyer and  in the Bay Area! Soon, I'll be an ASIC engineer for tools and methodology development on the DFX Engineering team at [NVIDIA](https://www.nvidia.com/).
+I'm Jasmine, a hardware enjoyer in the Bay Area! Soon, I'll be an ASIC engineer for tools and methodology development on the DFX Engineering team at [NVIDIA](https://www.nvidia.com/).
 
 I've completed my B.S. in Electrical Engineering and Computer Sciences at UC Berkeley. While there, I taught [CS 61C](https://cs61c.org/) for 4 semesters, then taught the [Tapeout IC Design Project: Intel 16nm SoC for IoT](https://www2.eecs.berkeley.edu/Courses/EE194/) course in Spring 2025. I had also worked extensively to develop [streamlined SoC bringup testing flows](https://github.com/ucb-bar/sp24-Baremetal-IDE/tree/dsp24-bmarks/tester) for the 2024 Berkeley class chips (MELLIS and COSMIC) and created an [SoC floorplanning utility](https://github.com/jasmangle/hammer-irview) for the Hammer VLSI framework.
 
