@@ -1,4 +1,3 @@
-<!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
@@ -8,13 +7,11 @@
 <meta name="msapplication-TileColor" content="#23a6d5">
 <meta name="theme-color" content="#23a6d5">
 
-<!-- Setup Google Analytics -->
-{% include head-custom-google-analytics.html %}
+{%- include head-custom-google-analytics.html -%}
 
-<!-- You can set your favicon here -->
-{% if site.favicon %}
+{%- if site.favicon -%}
   <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}">
-{% endif %}
+{%- endif- %}
 <link rel="stylesheet" href="{{ "/assets/custom_css/styles.css?v=" | append: site.github.build_revision | relative_url }}">
 
 {% assign crumbs = page.url | remove: '/index.html' | split: '/' %}
@@ -38,25 +35,27 @@
     "@context": "https://schema.org/",
     "@type": "Person",
     "name": "Jasmine Angle",
+    "callSign": "KN6SVU",
     "image": {
       "@type": "ImageObject",
       "url": "{{ site.logo | absolute_url }}"
     },
     "url": "{{ site.url }}",
-    "jobTitle": "CS 61C Teaching Assistant",
+    "jobTitle": "ASIC Engineer",
     "worksFor": {
       "@type": "Organization",
-      "name": "University of California, Berkeley",
-      "url": "https://berkeley.edu/",
-      "sameAs": "https://www.wikidata.org/wiki/Q168756",
-      "location": "Berkeley, CA"
+      "name": "Nvidia Corporation",
+      "url": "https://nvidia.com/",
+      "sameAs": "https://www.wikidata.org/wiki/Q182477",
+      "location": "Santa Clara, CA"
     },
     "email": "",
     "description": "Fourth-year EECS major at UC Berkeley.",
     "gender": "Female",
+    "pronouns": "she/her",
     "givenName": "Jasmine",
     "familyName": "Angle",
-    "affiliation": {
+    "alumniOf": {
       "@type": "Organization",
       "name": "University of California, Berkeley",
       "url": "https://berkeley.edu/",
@@ -66,4 +65,3 @@
     "knowsLanguage": "en"
   }
   </script>
-<!-- end custom head snippets -->

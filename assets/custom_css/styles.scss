@@ -5,7 +5,7 @@
 #top-gradient {
   background: #a5ebff;
   left: 0; right: 0; top: 0; z-index: 99999;
-  position: absolute;
+  position: fixed;
   background: repeating-linear-gradient(90deg, #23a6d5, #60ffa8, #21efff, #25ffe3, #23a6d5, #60ffa8, #21efff, #25ffe3, #23a6d5, #60ffa8, #21efff, #25ffe3, #23a6d5);
   background-size: 300% 100%;
   width: 100%;
@@ -57,4 +57,44 @@
 
 .link li a {
   margin-left: 0.25rem;
+}
+
+/*Tooltip*/
+.tltp-b {
+    cursor: pointer;
+}
+
+a:hover .tltp {
+    display: block;
+}
+
+.tltp {
+    background: repeating-linear-gradient(-45deg, #23a6d5, #60ffa8, #21efff, #25ffe3, #23a6d5, #60ffa8, #21efff, #25ffe3, #23a6d5, #60ffa8, #21efff, #25ffe3, #23a6d5);
+    background-size: 500% 300%;
+    animation: gradientHeader 10s linear infinite;
+    font-family: "MessinaSans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    position: fixed;
+    color: #fff;
+    color: var(--c-bg);
+    letter-spacing: 0;
+    padding: 0.2em 0.3em;
+    border-radius: 0.3em;
+    display: none;
+    max-width: 15em;
+    text-align: center;
+    z-index: 100000;
+    text-transform: none;
+    text-decoration: none;
+    text-decoration-color: rgb(0, 119, 179);
+    pointer-events: none;
+    margin-top: 0;
+}
+
+.tltp .tltp-fg {
+  background: #fff;
+  padding: 0.2em 0.3em;
+  border-radius: 0.3em;
 }

@@ -1,10 +1,9 @@
-{% case site.color-scheme %}
+{%- case site.color-scheme -%}
   {% when "", nil, false, 0, empty %}
     {% assign ColorScheme = "auto" %}
   {% else %}
     {% assign ColorScheme = site.color-scheme %}
-{% endcase %}
-
+{%- endcase -%}
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
@@ -12,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% seo title=false %}
+    {%- seo title=false -%}
     <meta property="og:image" content="{{ site.logo | absolute_url }}">
     <meta name="twitter:card" content="summary_small_image">
     <meta property="twitter:domain" content="{{ site.url_domain_only }}">
@@ -25,22 +24,16 @@
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-    {% include head-custom.html %}
+    {%- include head-custom.html -%}
   </head>
   <body>
     <div id="top-gradient"></div>
     <div class="wrapper">
       <div class="sidebar">
         <header>
-          {% if site.logo %}
+          {%- if site.logo -%}
             <img class="img-circle" src="{{site.logo | relative_url}}" alt="Logo">
-          {% endif %}
-
-          <!-- {% if site.blank_title %}
-            <h1>{{ site.title | default: site.github.repository_name }}</h1>
-          {% else %}
-            <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-          {% endif %} -->
+          {%- endif -%}
           <a class="svg-name-logo" href="{{ "/" | absolute_url }}" aria-label="Navigate to home page" style=" color:white;">
             <svg id="svg-name-logo-det" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 873.5 281.54">
               <desc>
@@ -51,25 +44,20 @@
                   .cls-1 {
                     font-size: 8em;
                   }
-            
                   .full-name-logo {
                     font-weight:600;
                     fill: var(--clr-a-text);
                     stroke: none
                   }
-
                   .full-name-logo:hover {
                     fill: var(--clr-a-text-hvr);
                   }
-                  
                   .cls-3 {
                     font-size: 8em;
                   }
-            
                   .cls-7 {
                     fill: none;
                   }
-            
                   .cls-6,
                   .cls-7 {
                     stroke-miterlimit: 20;
@@ -90,36 +78,29 @@
               </g>
             </svg>
           </a>
-          <!-- <h1>
-            <a href="{{ "/" | absolute_url }}">
-              Jasmine <div style="display: inline-block; transform-origin: left; transform: rotate(-10deg);">Angle</div>
-            </a>
-          </h1> -->
 
-          {% if site.email %}
+          {%- if site.email -%}
             <p class="addr">
               <i class="fa-regular fa-envelope"></i>&nbsp;
               <span id="email-contents"><button type="button" id="show-email">Show email</button></span>
               <noscript><br>(enable javascript)</noscript>
             </p>
-          {% endif %}
+          {%- endif -%}
 
           <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-          {% include sidebar.html %}
+          {%- include sidebar.html -%}
 
         </header>
 
-        {% include links-mobile.html %}
+        {%- include links-mobile.html -%}
 
         <div class="sidebar-footer">
           {%- include footer.html -%}
         </div>
       </div>
       <section>
-
       {{ content }}
-
       </section>
       <footer>
         {%- include footer.html -%}

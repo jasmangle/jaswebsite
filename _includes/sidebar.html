@@ -10,10 +10,9 @@
     }
   </style>
   <ul class="link">
-    {%- for section in site.sidebar_links %}
-    <!-- <li><a href="{{ platform.link }}"><i class="{{ platform.icon }}"></i> {{ platform.name }}</a></li> -->
-      <li {% if page.url == section.link | relative_url %}class="active"{% endif %}><a href="{{ section.link | relative_url }}">{{ section.icon }}&nbsp;{{ section.name }}</a></li>
-    {%- endfor %}
+    {%- for section in site.sidebar_links -%}
+    <li {% if page.url == section.link | relative_url %}class="active"{% endif %}><a href="{{ section.link | relative_url }}">{{ section.icon }}&nbsp;{{ section.name }}</a></li>
+    {%- endfor -%}
   </ul>
 </div>
 <div class="link-wrapper">
@@ -28,9 +27,8 @@
     }
   </style>
   <ul class="link">
-    {%- for platform in site.sidebar %}
-    <!-- <li><a href="{{ platform.link }}"><i class="{{ platform.icon }}"></i> {{ platform.name }}</a></li> -->
-      <li><a href="{{ platform.link }}">{{ platform.icon }}&nbsp;{{ platform.name }}</a></li>
-    {%- endfor %}
+    {%- for platform in site.sidebar -%}
+    <li><a href="{{ platform.link }}">{{ platform.icon }}&nbsp;{{ platform.name }}</a></li>
+    {%- endfor -%}
   </ul>
 </div>
