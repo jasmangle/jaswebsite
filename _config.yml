@@ -22,7 +22,7 @@ title: Jasmine Angle
 title_suffix: Jasmine Angle's Personal Website
 email: not-my-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  UC Berkeley alum;<wbr> loves making chips.
+  UC Berkeley EECS alum;<wbr> loves making chips.
 baseurl: "" # the subpath of your site, e.g. /blog
 url_domain_only: "jasmineangle.dev"
 url: "https://jasmineangle.dev" # the base hostname & protocol for your site, e.g. http://example.com
