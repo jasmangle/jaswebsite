@@ -35,6 +35,7 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
   - jekyll-sitemap
+  - jekyll-minifier
 
 logo: /assets/img/jasmine2.jpg
 color-scheme: auto
