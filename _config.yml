@@ -23,6 +23,8 @@ title_suffix: Jasmine Angle's Personal Website
 email: not-my-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   NVIDIA ASIC Engineer; UC Berkeley EECS alum; loves making chips.
+description_html: >- # this means to ignore newlines until "baseurl:"
+  <nobr>NVIDIA ASIC Engineer;&nbsp;</nobr><wbr><nobr>UC Berkeley EECS alum;&nbsp;</nobr><wbr><nobr>loves making chips.</nobr>
 baseurl: "" # the subpath of your site, e.g. /blog
 url_domain_only: "jasmineangle.dev"
 url: "https://jasmineangle.dev" # the base hostname & protocol for your site, e.g. http://example.com
@@ -39,6 +41,31 @@ plugins:
 
 logo: /assets/img/jasmine2.jpg
 color-scheme: auto
+
+jekyll-minifier:
+  preserve_php: false                # Default: false
+  remove_spaces_inside_tags: false   # Default: true
+  remove_multi_spaces: true         # Default: true
+  remove_comments: true             # Default: true
+  remove_intertag_spaces: true      # Default: false
+  remove_quotes: false              # Default: false
+  compress_css: false                # Default: true
+  compress_javascript: true         # Default: true
+  compress_json: true               # Default: true
+  simple_doctype: false             # Default: false
+  remove_script_attributes: false   # Default: false
+  remove_style_attributes: false    # Default: false
+  remove_link_attributes: false     # Default: false
+  remove_form_attributes: false     # Default: false
+  remove_input_attributes: false    # Default: false
+  remove_javascript_protocol: false # Default: false
+  remove_http_protocol: false       # Default: false
+  remove_https_protocol: false      # Default: false
+  preserve_line_breaks: false       # Default: false
+  simple_boolean_attributes: false  # Default: false
+  compress_js_templates: false      # Default: false
+  uglifier_args:
+    harmony: true
 
 sidebar_links:
   - name: Home
@@ -64,6 +91,23 @@ sidebar:
   - name: GitHub
     icon: <i class="fa-brands fa-fw fa-github"></i>
     link: https://github.com/jasmangle
+
+# SEO Tag Processing Information
+twitter:
+  username: jasmangle
+  card: summary_small_image
+
+social:
+  name: Jasmine Angle
+  links:
+    - https://linkedin.com/in/jasmangle
+    - https://instagram.com/jasmangle
+    - https://github.com/jasmangle
+    - https://x.com/jasmangle
+    - https://bsky.app/profile/angle.dev
+    - https://angle.dev/
+
+locale: en_US
 
 # Exclude from processing.
 # The following items will not be processed, by default.
