@@ -32,7 +32,7 @@ twitter_username: o_O
 github_username: jasmangle
 
 # Build settings
-remote_theme: BDHU/minimalist
+remote_theme: https://github.com/bdhu/minimalist
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
