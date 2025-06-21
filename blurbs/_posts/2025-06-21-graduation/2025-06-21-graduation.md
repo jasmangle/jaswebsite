@@ -30,7 +30,7 @@ In my second semester, I took the [Hands-On-Ham Radio seminar](https://classes.b
 
 <img class="blurb-img" src="jasmine-soda-277.webp" alt="Picture of the Soda 277 lab focused on a whiteboard that says 'Jasmine was here' followed by a heart.">
 
-One thing I absolutely do not regret was my decision to become a teaching assistant throughout my years at Berkeley. My personal interests lean heavily towards low-level software and hardware design, thus I really enjoyed taking CS 61C (machine structures). I started teaching CS 61C as an academic intern in Spring 2023, then progressed to tutor the following semester, then a TA for two semesters afterwards. After I had taken the tapeout and bringup courses, I became a teaching assistant for the following class tapeout project in Spring 2025.
+One thing I absolutely do not regret was my decision to become a teaching assistant. My personal interests lean heavily towards low-level software and hardware design, thus I really enjoyed taking CS 61C (machine structures). I started teaching CS 61C as an academic intern in Spring 2023, then progressed to tutor the following semester, then a TA for two semesters afterwards. After I had taken the tapeout and bringup courses, I became a teaching assistant for the following class tapeout project in Spring 2025.
 
 I would have started teaching other classes earlier, but due to some self-esteem issues early on, I worried that I was just not qualified to teach in any capacity. This was absolutely unjustified, however, and honestly teaching was one of the best things I had done.
 
