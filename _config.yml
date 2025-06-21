@@ -42,6 +42,9 @@ plugins:
 logo: /assets/img/jasmine2.jpg
 color-scheme: auto
 
+# Permalinks
+permalink: /:categories/:year/:month/:day/:title/
+
 jekyll-minifier:
   preserve_php: false                # Default: false
   remove_spaces_inside_tags: false   # Default: true
@@ -105,6 +108,15 @@ social:
     - https://github.com/jasmangle
     - https://x.com/jasmangle
     - https://bsky.app/profile/angle.dev
+    - https://orcid.org/0009-0008-0282-2629
+
+# RSS Feed
+author: jasmangle
+
+feed:
+  path: /feed.xml
+  categories:
+    - blurbs
 
 locale: en_US
 

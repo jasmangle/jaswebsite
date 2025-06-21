@@ -7,7 +7,7 @@ permalink: /coursework/
 
 Here is a list of some classes I've taken during my time as an undergraduate at UC Berkeley.
 
-## Spring 2025
+## Spring 2025 🎓
 - [CS 168](https://sp25.cs168.io/): Introduction to the Internet: Architecture and Protocols
 - [Decal](https://151tapeout.berkie.ee/): EECS151 Tapeout (SkyWater SKY130; Student-Led Tapeout)
 - [Decal](https://docs.google.com/document/u/1/d/e/2PACX-1vT5PRppQ6Sr3DH8IOYj8q7VaZGSjdKfX6bKxnbVdo9UgthZ10orER8jqgsd6Xnw9GsUqlju_ZrKPpRE/pub): Esoteric Programming Languages

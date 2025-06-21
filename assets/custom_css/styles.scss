@@ -82,7 +82,6 @@ a:hover .tltp {
     padding: 0.2em 0.3em;
     border-radius: 0.3em;
     display: none;
-    max-width: 15em;
     text-align: center;
     z-index: 100000;
     text-transform: none;
@@ -105,4 +104,18 @@ a:hover .tltp {
     display: none !important;
   }
 
+}
+
+/* Blurbs */
+
+.blurb-top-img {
+  border-radius: 20px;
+  box-shadow: 0 8px 8px -4px lightblue;
+  margin-bottom: 1em;
+}
+
+.blurb-img {
+  border-radius: 20px;
+  box-shadow: 0 8px 8px -4px lightblue;
+  margin-bottom: 0.1em;
 }

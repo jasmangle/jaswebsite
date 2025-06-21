@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{{ content }}
+
+<p><a href="{{ site.feed.path }}"><i class="fa-solid fa-rss"></i> Subscribe to my RSS feed</a></p>
+
+{%- for post in site.posts -%}
+
+<p>
+  [{{post.date | date: "%Y-%m-%d"}}] <a class="" href="{{ post.url }}">{{post.title}}</a><br>
+  {{ post.description }}
+</a>
+</p>
+
+{%- endfor -%}

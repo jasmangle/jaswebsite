@@ -1,12 +1,26 @@
 ---
 layout: default
 ---
-
-<h2>{{ page.title }}</h2>
-<h4><em>Posted on {{ page.date | date: "%B %-d, %Y" }}</em></h4>
-
-{{ content }}
-
-{% if page.tags %}
-<span style="font-size: smaller;">tags: <em>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></span>
+<a href="/blurbs"><i class="fa-solid fa-arrow-left"></i> Back to Blurbs</a>
+<article>
+<header>
+  <hgroup>
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.description }}</h2>
+  </hgroup>
+</header>
+{% if page.image %}
+<img class="blurb-top-img" src="{{ page.image }}" alt="{{ page.image_alt }}">
 {% endif %}
+<h4>
+  <em>Posted on {{ page.date | date: "%B %-d, %Y" }}</em>
+  {%- if page.update_date -%}
+  <br><em>Updated on {{ page.update_date | date: "%B %-d, %Y" }}</em>
+  {%- endif -%}
+</h4>
+{{ content }}
+{% if page.tags %}
+<span style="font-size: smaller;"><em>tags: <span>{{ page.tags | join: "</span> - <span>" }}</span></em></span>
+{% endif %}
+</article>
+<a href="/blurbs"><i class="fa-solid fa-arrow-left"></i> Back to Blurbs</a>
