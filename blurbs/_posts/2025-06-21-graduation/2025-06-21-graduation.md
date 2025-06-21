@@ -58,7 +58,7 @@ Small bit of advice if any current Berkeley students happen to be reading this: 
 
 <img class="blurb-img" src="sp23-eecs151.webp" alt="Picture of waveforms being shown on GTKWave.">
 
-***Do not take EECS 151, Physics 7B, CS 70, and the HOPE DeCal at the same time. That was a really bad idea. I found myself left with close to no free time at all.***
+***Do not take EECS 151, Physics 7B, CS 70, and the HOPE DeCal at the same time. That was a really bad idea. I found myself left with almost no free time at all.***
 
 save your sanity. preserve your hair. I'm sure I knocked like 5 years off my lifespan during that semester. For prioritizing mental health, it is genuinely not worth enduring this schedule. At the very least, take physics a different semester if you are focused on digital IC design. Having two problem-set heavy courses constantly assigning more work on top of EECS 151's final project and the HOPE DeCal project in the back of your mind at all times is not a healthy combination.
 
