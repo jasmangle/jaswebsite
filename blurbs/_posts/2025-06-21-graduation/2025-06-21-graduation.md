@@ -34,9 +34,9 @@ One thing I absolutely do not regret was my decision to become a teaching assist
 
 I would have started teaching other classes earlier, but due to some self-esteem issues early on, I worried that I was just not qualified to teach in any capacity. This was absolutely unjustified, however, and honestly teaching was one of the best things I had done.
 
-TEACHING IS SO MUCH FUN!!!
+Teaching is so much fun!!!
 
-It was an incredible privilege to be afforded the opportunity to teach other students in this capacity. This ended up being one of the biggest highlights of my time at Berkeley and was some of the most fun I had. I learned a ton from my peers and I would absolutely do it again. Both CS 61C and the tapeout course 
+It was an incredible privilege to be afforded the opportunity to teach other students in this capacity. This ended up being one of the biggest highlights of my time at Berkeley and was some of the most fun I had. I learned a ton from my peers and I would absolutely do it again.
 
 ## Work-Life Balance
 
