@@ -33,3 +33,4 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem 'jekyll-sitemap'
 gem 'jekyll-minifier'
 gem 'google-protobuf', ">= 4.31.1"
+gem 'jekyll-sass-converter', ">= 3.1.0"
