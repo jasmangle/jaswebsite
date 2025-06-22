@@ -14,8 +14,8 @@
     {%- include seo-custom.html -%}
     
     <title>{{ page.title }} | {{ site.title_suffix }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/colors-ColorScheme.css?v=" | replace: "ColorScheme", ColorScheme | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/colors-ColorScheme.css" | replace: "ColorScheme", ColorScheme | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.env.WORKERS_CI_COMMIT_SHA | relative_url }}">
 
     <link rel="preload" href="{{site.logo | relative_url}}" as="image">
     <!--[if lt IE 9]>
@@ -62,7 +62,7 @@
         {%- include footer.html -%}
       </footer>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js?v=" | append: site.github.build_revision | relative_url }}"></script>
-    <script src="{{ "/assets/js/common.js?v=" | append: site.github.build_revision | relative_url }}"></script>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/common.js?v=" | append: site.env.WORKERS_CI_COMMIT_SHA | relative_url }}"></script>
   </body>
 </html>
