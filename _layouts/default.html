@@ -15,7 +15,7 @@
     
     <title>{{ page.title }} | {{ site.title_suffix }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/colors-ColorScheme.css" | replace: "ColorScheme", ColorScheme | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.env.WORKERS_CI_COMMIT_SHA | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}">
 
     <link rel="preload" href="{{site.logo | relative_url}}" as="image">
     <!--[if lt IE 9]>
@@ -63,6 +63,6 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    <script src="{{ "/assets/js/common.js?v=" | append: site.env.WORKERS_CI_COMMIT_SHA | relative_url }}"></script>
+    <script src="{{ "/assets/js/common.js?v=" | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}"></script>
   </body>
 </html>
