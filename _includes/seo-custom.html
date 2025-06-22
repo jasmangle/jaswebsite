@@ -26,6 +26,25 @@
 
 {%- feed_meta -%}
 
+{%- if page.layout == "post_blurb" -%}
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Article",
+"url": {{ page.url | absolute_url | jsonify }},
+"image": "{{ site.url }}{{ page.url | replace:'index.html',''}}{{ page.twitter_image }}",
+"headline": {{ page.title | jsonify }},
+"author": {
+  "@type": "Person",
+  "name": "Jasmine Angle",
+  "url": {{ site.url | jsonify }}
+},
+"datePublished": "{{ page.date }}",
+"articleBody": {{ content | jsonify }}
+}
+</script>
+{%- endif -%}
+
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
