@@ -17,14 +17,14 @@ This site is still very much a work-in-progress and only really contains profess
 ## Recent Blurbs
 
 <div>
-{% assign posts_rev = site.posts | reverse %}
-{% assign counter = 0 %}
-{% for post in posts_rev %}
-  {% if counter < 3 and post.path != page.path %}
-    {% include blurb_item.html post=post %}
-    {% assign counter = counter | plus: 1 %}
-  {% endif %}
-{% endfor %}
+{%- assign posts_rev = site.posts | reverse -%}
+{%- assign counter = 0 -%}
+{%- for post in posts_rev -%}
+  {%- if counter < 3 and post.path != page.path -%}
+    {%- include blurb_item.html post=post -%}
+    {%- assign counter = counter | plus: 1 -%}
+  {%- endif -%}
+{%- endfor -%}
 </div>
 
 [See all blurbs](blurbs)

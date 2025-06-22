@@ -1,14 +1,4 @@
 <div class="internal-link-wrapper">
-  <style scoped>
-    ul.link a {
-      color:var(--clr-h1-and-bold);
-      text-decoration:none;
-    }
-
-    ul.link a:hover, a:focus {
-      color: var(--clr-a-text-hvr);
-    }
-  </style>
   <ul class="link">
     {%- for section in site.sidebar_links -%}
     <li {% if page.url == section.link | relative_url %}class="active"{% endif %}><a href="{{ section.link | relative_url }}">{{ section.icon }}&nbsp;{{ section.name }}</a></li>
@@ -16,16 +6,6 @@
   </ul>
 </div>
 <div class="link-wrapper">
-  <style scoped>
-    ul.link a {
-      color:var(--clr-h1-and-bold);
-      text-decoration:none;
-    }
-
-    ul.link a:hover, a:focus {
-      color: var(--clr-a-text-hvr);
-    }
-  </style>
   <ul class="link">
     {%- for platform in site.sidebar -%}
     <li><a href="{{ platform.link }}">{{ platform.icon }}&nbsp;{{ platform.name }}</a></li>

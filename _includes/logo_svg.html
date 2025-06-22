@@ -1,51 +1,40 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 873.5 281.54">
-    <desc>
-      Jasmine Angle's name with the word Angle elevated by a small angle underneath the text.
-    </desc>
-    <defs>
-      <style>
-        .cls-1 {
-          font-size: 166.34px;
-        }
-  
-        .cls-1,
-        .cls-3 {
-          font-family: MyriadPro-Regular, Myriad Pro;
-        }
-  
-        .cls-2 {
-          letter-spacing: -0.01em;
-        }
-  
-        .cls-3 {
-          font-size: 166.34px;
-        }
-  
-        .cls-4 {
-          letter-spacing: 0em;
-        }
-  
-        .cls-5,
-        .cls-7 {
-          fill: none;
-        }
-  
-        .cls-6,
-        .cls-7 {
-          stroke-miterlimit: 20;
-        }
-      </style>
-    </defs>
-    <text class="cls-1" transform="translate(0.24 239.95) scale(1.02 1)">
-      <tspan class="cls-2">Jasmine</tspan>
-      <tspan x="99.8" y="0"></tspan>
+<svg id="{{ include.logo_id }}" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 873.5 281.54">
+  <desc>Jasmine Angle</desc>
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 8em;
+      }
+      .full-name-logo {
+        font-weight:600;
+        fill: var(--clr-a-text);
+        stroke: none
+      }
+      .full-name-logo:hover {
+        fill: var(--clr-a-text-hvr);
+      }
+      .cls-3 {
+        font-size: 8em;
+      }
+      .cls-7 {
+        fill: none;
+      }
+      .cls-6,
+      .cls-7 {
+        stroke-miterlimit: 20;
+      }
+    </style>
+  </defs>
+
+  <line class="cls-6" y1="249.15" x2="873.5" y2="249.15" stroke-width="3" />
+  <line class="cls-6" x1="465.16" y1="249.15" x2="873.5" y2="141.65" stroke-width="3" />
+  <path class="cls-7" d="M558.5,194.5c7.3,0,13,9.64,13,22" transform="translate(-8 32.15)" stroke-width="3" />
+  <g class="full-name-logo">
+    <text class="cls-1" transform="translate(0.24 239.95)">
+      Jasmine
     </text>
-    <text class="cls-3" transform="matrix(0.97, -0.26, 0.26, 0.97, 465.13, 240.39)">
-      <tspan class="cls-4">Angle</tspan>
-      <tspan x="101.3" y="0"></tspan>
+    <text class="cls-3" transform="matrix(1, -0.26, 0.26, 1, 510.13, 226.39)">
+      Angle
     </text>
-    <line class="cls-6" y1="249.15" x2="465.5" y2="249.15" />
-    <line class="cls-6" x1="465.16" y1="249.62" x2="873.5" y2="141.65" />
-    <line class="cls-6" x1="462.26" y1="248.8" x2="873.5" y2="248.8" />
-    <path class="cls-7" d="M558.5,194.5c7.3,0,13,9.64,13,22" transform="translate(-8 32.15)" />
-  </svg>
+  </g>
+</svg>

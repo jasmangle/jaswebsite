@@ -1,7 +1,5 @@
 <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
-</noscript>
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"></noscript>
 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/favicon-32x32.png' | relative_url }}">
@@ -17,7 +15,7 @@
 {%- endif- %}
 <link rel="stylesheet" href="{{ "/assets/custom_css/styles.css?v=" | append: site.github.build_revision | relative_url }}">
 
-{% assign crumbs = page.url | remove: '/index.html' | split: '/' %}
+{%- assign crumbs = page.url | remove: '/index.html' | split: '/' -%}
 <script type="application/ld+json">
 { "@context": "https://schema.org", "@type": "BreadcrumbList",
 "itemListElement": [{
