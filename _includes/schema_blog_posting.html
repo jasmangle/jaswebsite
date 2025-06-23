@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": {{ include.page.url | absolute_url | append: "#BlogPosting" | jsonify }},
+  "url": {{ include.page.url | absolute_url | jsonify }},
+  "image": "{{ site.url }}{{ include.page.url | replace:'index.html',''}}{{ include.page.twitter_image }}",
+  "headline": {{ include.page.title | jsonify }},
+  "author": {"@id": "https://jasmineangle.dev/#Person"},
+  "datePublished": "{{ include.page.date | date: "%Y-%m-%dT%H:%M:%S.%6NZ" }}",
+  {%- if include.body == true -%}
+  "articleBody": {{ include.page.content | jsonify }},
+  {%- endif -%}
+  "mainEntityOfPage": {{ include.page.url | absolute_url | jsonify}},
+  "inLanguage": "en-US",
+  "isPartOf": {"@id": "https://jasmineangle.dev/blurbs/#Blog" }
+}
