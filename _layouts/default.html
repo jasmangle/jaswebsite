@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{ "/assets/css/colors-ColorScheme.css" | replace: "ColorScheme", ColorScheme | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}">
 
-    <link rel="preload" href="{{site.logo | relative_url}}" as="image">
+    <link rel="preload" href="{{site.logo_compressed | relative_url}}" as="image">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -29,7 +29,7 @@
       <div class="sidebar">
         <header>
           {%- if site.logo -%}
-            <img class="img-circle" loading="lazy" src="{{site.logo | relative_url}}" alt="Logo">
+            <img class="img-circle" loading="lazy" src="{{site.logo_compressed | relative_url}}" alt="Logo">
           {%- endif -%}
           <a class="svg-name-logo" href="{{ "/" | absolute_url }}" aria-label="Navigate to home page" style=" color:white;">
             {%- include logo_svg.html logo_id="svg-name-logo-det" -%}
