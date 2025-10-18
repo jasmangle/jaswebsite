@@ -93,7 +93,7 @@ This site is still very much a work-in-progress and only really contains profess
 ### Teaching
 
 <p style="text-align:left;">
-  <strong><a href="https://sites.google.com/berkeley.edu/tapeoutclasswiki/semesters/sp23tapeout" target="_blank">EE 194 IC Design Project (Tapeout) @ UC Berkeley</a></strong>
+  <strong><a href="https://sites.google.com/berkeley.edu/tapeoutclasswiki/semesters/sp23tapeout" target="_blank">EE 290-7 (194) IC Design Project (Tapeout) @ UC Berkeley</a></strong>
   <span style="float:right;">Berkeley, CA</span><br>
   <i>
     Undergraduate Student Instructor
