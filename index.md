@@ -41,7 +41,7 @@ This site is still very much a work-in-progress and only really contains profess
   <i>
     ASIC Engineer; Tools and Methodology Development
     <span style="float:right;">
-      Jun. 2025
+      Jun. 2025 &#8212; Present
     </span>
   </i>
   <ul>
