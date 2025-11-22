@@ -12,6 +12,7 @@ Here is a list of some classes I've taken during my time as an undergraduate at 
 - [Decal](https://151tapeout.berkie.ee/): EECS151 Tapeout (SkyWater SKY130; Student-Led Tapeout)
 - [Decal](https://docs.google.com/document/u/1/d/e/2PACX-1vT5PRppQ6Sr3DH8IOYj8q7VaZGSjdKfX6bKxnbVdo9UgthZ10orER8jqgsd6Xnw9GsUqlju_ZrKPpRE/pub): Esoteric Programming Languages
 - Continued bringup testing of BearlyML'24 (MELLIS) and DSP'24 (COSMIC) chips from previous tapeout.
+  - 2025 ESSERC Paper: [COSMIC: A Multi-Vector-Core Heterogeneous RISC-V SoC for Intelligent Audio DSP in Intel 16](https://ieeexplore.ieee.org/document/11213989)
 
 ## Fall 2024
 - [EE 194](https://www2.eecs.berkeley.edu/Courses/EE194/): IC Design Project: 16nm SoC for IoT (Bringup Course)
