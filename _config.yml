@@ -39,8 +39,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-minifier
 
-logo: /assets/img/jasmine2.jpg
-logo_compressed: /assets/img/jasmine2.webp
+logo: /assets/img/jasmine3.jpg
+logo_compressed: /assets/img/jasmine3.webp
 color-scheme: auto
 
 # Permalinks
