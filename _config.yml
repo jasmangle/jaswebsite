@@ -83,9 +83,6 @@ sidebar_links:
     link: /blurbs/
   
 sidebar:
-  - name: Tumblr
-    icon: <i class="fa-brands fa-fw fa-tumblr"></i>
-    link: https://jasmangle.tumblr.com/
   - name: LinkedIn
     icon: <i class="fa-brands fa-fw fa-linkedin"></i>
     link: https://linkedin.com/in/jasmangle
