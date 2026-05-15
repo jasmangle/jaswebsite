@@ -8,7 +8,7 @@ I'm Jasmine, a hardware enjoyer in the Bay Area! I am currently an ASIC engineer
 
 I've completed my B.S. in Electrical Engineering and Computer Sciences at UC Berkeley. While there, I taught [CS 61C](https://cs61c.org/) for 4 semesters, then taught the [Tapeout IC Design Project: Intel 16nm SoC for IoT](https://www2.eecs.berkeley.edu/Courses/EE194/) course in Spring 2025. I had also worked extensively to develop [streamlined SoC bringup testing flows](https://github.com/ucb-bar/sp24-Baremetal-IDE/tree/dsp24-bmarks/tester) for the 2024 Berkeley class chips (MELLIS and [COSMIC](https://ieeexplore.ieee.org/document/11213989)) and created an [SoC floorplanning utility](https://github.com/jasmangle/hammer-irview) for the [Hammer VLSI framework](https://hammer-vlsi.readthedocs.io/).
 
-Outside of work, I can be found frequently playing Stardew Valley or roaming around exploring new things. :D
+Outside of work, I can be found frequently playing Stardew Valley or roaming around town in cute lolita coords exploring new things. :D
 
 This site is still very much a work-in-progress and only really contains professional experience stuff, but I do plan to have more fun things on here soon!
 
