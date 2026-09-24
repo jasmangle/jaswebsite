@@ -30,7 +30,7 @@
   font-weight: bold;
 }
 
-html:not(.disable-jas-font) {
+html:not(.no-jas-font) {
   .jas-font,h1,h2,h3,h4,h5,h6 {
     font-family: "jasfont";
   }
@@ -81,7 +81,7 @@ html:not(.disable-jas-font) {
   width: 100%;
 }
 
-#show-email {
+#show-email, #toggle-jas-font {
   margin: 0;
   padding: 0;
   border: 0;
@@ -93,7 +93,7 @@ html:not(.disable-jas-font) {
   text-decoration: none;
 }
 
-#show-email:hover, #show-email:focus {
+#show-email:hover, #show-email:focus, #toggle-jas-font:hover, #toggle-jas-font:focus {
   color: var(--clr-a-text-hvr);
 }
 
