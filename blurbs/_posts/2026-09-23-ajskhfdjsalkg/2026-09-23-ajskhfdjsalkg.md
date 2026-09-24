@@ -38,7 +38,7 @@ So now... with only one other choice left on my laptop without having to deal wi
 
 I gotta say... now that my GNOME works (kinda, for some reason my second monitor just freezes on one picture), it is actually kinda... nice.
 
-I don't really know what the "proper" way is to structure the nix configuration files, but I like the idea behind the flakes for individual projects. If only I had actual time to spend learning the syntax and getting acquainted with it. Before I could write any of this post, I had to get the Nix stuff working for this website, which was a mild pain and only a couple hours of my life I'll never get back. But, in that time, it did make me appreciate the flexibility that Nix has to offer for environment management.
+I don't really know what the "proper" way is to structure the nix configuration files, but I like the idea behind the flakes for individual projects. If only I had actual time to spend learning the syntax and getting acquainted with it. Before I could write any of this post, I had to get the Nix stuff [working for this website](https://github.com/jasmangle/jaswebsite/commit/1110beb700a59e7eb948c7b8e1c24f42bd7e7230), which was a mild pain and only a couple hours of my life I'll never get back. But, in that time, it did make me appreciate the flexibility that Nix has to offer for environment management.
 
 Right now, my `/etc/nix` is literally just a git repository in its own right and I am just making verbatim changes in there. I don't have secrets management fully set up yet, so I am definitely not pushing anything up to a public repo, but at least it's starting to take shape. I see all the cool GitHub repos everyone has of their NixOS setups and uhhhhh it looks wayyy too intimidating for me right now.
 
