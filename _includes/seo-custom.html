@@ -32,7 +32,7 @@
 [{
   "@context": "https://schema.org/",
   "@type": "Person",
-  "@id": "https://jasmineangle.dev/#Person",
+  "@id": "https://jasmangle.com/#Person",
   "name": "Jasmine Angle",
   "callSign": "KN6SVU",
   "image": {
@@ -76,7 +76,7 @@
   {%- endfor -%}
 ],
 {%- endif -%}
-"author": {"@id": "https://jasmineangle.dev/#Person"},
+"author": {"@id": "https://jasmangle.com/#Person"},
 "url": "{{ site.url }}{{ page.url | replace:'index.html',''}}"
 }]
 </script>
@@ -86,11 +86,11 @@
 {
 "@context": "https://schema.org",
 "@type": "Blog",
-"@id": "https://jasmineangle.dev/blurbs/#Blog",
-"mainEntityOfPage": "https://jasmineangle.dev/blurbs/",
+"@id": "https://jasmangle.com/blurbs/#Blog",
+"mainEntityOfPage": "https://jasmangle.com/blurbs/",
 "name": "Jasmine Angle's Blurbs",
 "description": "A collection of smaller writings, potentially useful files/scripts, or things pertaining to my interests.",
-"author": {"@id": "https://jasmineangle.dev/#Person"} {%- if page.layout == "blurbs_list" -%},
+"author": {"@id": "https://jasmangle.com/#Person"} {%- if page.layout == "blurbs_list" -%},
 "blogPost": [
   {%- for post in site.posts -%}
   {%- include schema_blog_posting.html page=post body=false -%}
