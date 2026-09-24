@@ -26,8 +26,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 description_html: >- # this means to ignore newlines until "baseurl:"
   <nobr>NVIDIA ASIC Engineer;&nbsp;</nobr><wbr><nobr>UC Berkeley EECS alum;&nbsp;</nobr><wbr><nobr>loves making chips.</nobr>
 baseurl: "" # the subpath of your site, e.g. /blog
-url_domain_only: "jasmineangle.dev"
-url: "https://jasmineangle.dev" # the base hostname & protocol for your site, e.g. http://example.com
+url_domain_only: "jasmangle.com"
+url: "https://jasmangle.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: o_O
 github_username: jasmangle
 
