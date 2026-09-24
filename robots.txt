@@ -20,7 +20,6 @@ User-agent: Diffbot
 User-agent: DuckAssistBot
 User-agent: FacebookBot
 User-agent: FriendlyCrawler
-User-agent: Google-Extended
 User-agent: GPTBot
 User-agent: iaskspider/2.0
 User-agent: ICC-Crawler
