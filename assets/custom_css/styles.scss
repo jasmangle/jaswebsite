@@ -22,6 +22,52 @@
   }
 }
 
+// BEGIN EXPERIMENTAL JASMINE FONT
+
+@font-face {
+  font-family: "jasfont";
+  src: url("/assets/fonts/JasmineAngleHandwritingBold.woff2") format('woff2');
+  font-weight: bold;
+}
+
+html:not(.disable-jas-font) {
+  .jas-font,h1,h2,h3,h4,h5,h6 {
+    font-family: "jasfont";
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 2.0em;
+  }
+
+  h3 {
+    font-size: 1.8em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  h5 {
+    font-size: 1.3em;
+  }
+
+  h6 {
+    font-size: 1.25em;
+  }
+
+  small.jas-font {
+    font-size: 1em;
+  }
+}
+
+
+
+// END EXPERIMENTAL JASMINE FONT
+
 .svg-name-logo {
   stroke: var(--clr-h1-and-bold);
   fill: var(--clr-h1-and-bold);
