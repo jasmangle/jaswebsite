@@ -7,4 +7,4 @@ vendor
 # nix stuff
 .direnv
 
-.sfd
+*.sfd
