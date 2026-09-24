@@ -46,6 +46,14 @@ color-scheme: auto
 # Permalinks
 permalink: /:categories/:year/:month/:day/:title/
 
+exclude:
+  # all the nix stuff
+  - .bundle/
+  - .envrc
+  - flake.*
+  - gemset.nix
+  - scripts/
+
 jekyll-minifier:
   preserve_php: false                # Default: false
   remove_spaces_inside_tags: false   # Default: true
