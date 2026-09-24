@@ -19,3 +19,8 @@ User-agent: Meta-ExternalAgent
 User-agent: Meta-ExternalFetcher
 User-agent: OAI-SearchBot
 Disallow: /
+
+User-agent: bingbot
+User-agent: Kagibot
+User-agent: Googlebot
+Allow: /
