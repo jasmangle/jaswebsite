@@ -45,7 +45,7 @@ Right now, my `/etc/nix` is literally just a git repository in its own right and
 
 ## Update: bike!
 
-<a href="bike.png"><img class="blurb-img" src="bike.png" alt="Picture of a laptop display showing Permission Denied when running /sbin/init."></a>
+<a href="bike.png"><img class="blurb-img" src="bike.png" alt="Picture of my Trek 4500 red and black bike."></a>
 
 Recently I ended up getting a <a href="https://bikeindex.org/bikes/3495946">nice used bike</a> (a Trek 4500) from <a href="https://www.goodkarmabikes.org/">Good Karma Bikes</a>! I haven't been on a bike since I was super tiny, so it is kinda nice to finally have one. Honestly, the idea of biking on the road kinda freaked me out for a while, but I figured starting out riding it early in the morning when it isn't too busy outside can ease me into it. Since I don't have a car, it certainly makes doing small trips around SJ much easier. I really gotta work on my leg muscles though, I'm terribly out of shape.
 
