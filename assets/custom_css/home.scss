@@ -31,10 +31,6 @@ body {
   width: 100%;
 }
 
-.slide-anim {
-  animation: fadeInSlide 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
-}
-
 @keyframes tileShift {
   0% {
     background-position: 0 0;
@@ -44,12 +40,14 @@ body {
   }
 }
 
-.tile-shift {
-  animation: tileShift 5s linear infinite;
+.slide-anim-tile-shift {
+  animation: fadeInSlide 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, tileShift 5s linear infinite;
   background-color: #feeaff;
   background-image: url("{{ '/assets/img/ui/tile-bg.png?v=' | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}");
   background-size: 30px;
 }
+
+
 
 .window-outer {
   width: calc(100% - 4px);
