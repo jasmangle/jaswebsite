@@ -2,7 +2,7 @@
 ---
 // BEGIN Home Page
 
-@keyframes fade-in-slide {
+@keyframes fadeInSlide {
   0% {
     -webkit-transform: translateY(200px);
             transform: translateY(200px);
@@ -32,7 +32,7 @@ body {
 }
 
 .window-outer {
-  animation: fade-in-slide 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, tileShift 25s linear infinite;
+  animation: fadeInSlide 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, tileShift 5s linear infinite;
   width: calc(100% - 4px);
   border-color:aqua;
   border: 2px ridge #f691ff;
@@ -61,7 +61,7 @@ body {
     background-position: 0 0;
   }
   100% {
-    background-position: 100px 100px;
+    background-position: 30px 30px;
   }
 }
 
@@ -70,7 +70,7 @@ body {
   padding: 0;
   border: 0;
   position: absolute;
-  top: 0.25rem;
+  top: 0.275rem;
   right: 0.2rem;
 
   background: transparent;
@@ -78,4 +78,12 @@ body {
   font-family: inherit;
   color: var(--clr-a-text);
   text-decoration: none;
+}
+
+.window-btn-exit:hover g.btn-raise {
+  filter: hue-rotate(45deg);
+}
+
+.window-btn-exit:active g.btn-raise {
+  filter: contrast(0.5);
 }

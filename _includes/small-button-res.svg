@@ -28,15 +28,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
-     inkscape:zoom="1.7934104"
-     inkscape:cx="-62.729646"
-     inkscape:cy="21.746277"
+     inkscape:zoom="28.694566"
+     inkscape:cx="7.5101327"
+     inkscape:cy="9.0260991"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="l3"
      showgrid="false">
     <inkscape:grid
        id="grid27"
@@ -317,44 +317,34 @@
          inkscape:label="rectGradient"
          sodipodi:insensitive="true" />
     </g>
-    <rect
-       style="opacity:1;mix-blend-mode:normal;fill:url(#linearGradient14);fill-opacity:1;stroke:url(#linearGradient46);stroke-width:8;stroke-linejoin:miter;stroke-dasharray:none"
-       id="rect1"
-       width="897.87201"
-       height="629.66882"
-       x="231.06403"
-       y="300"
-       rx="59.586262"
-       ry="58.387135"
-       inkscape:label="rectGradient"
-       sodipodi:insensitive="true" />
     <g
        inkscape:groupmode="layer"
-       id="layer3"
-       inkscape:label="contentGroup"
+       id="l3"
+       inkscape:label="raised"
        transform="translate(179.55721,287.80041)"
-       sodipodi:insensitive="true">
+       sodipodi:insensitive="true"
+       class="btn-raise">
       <rect
-         style="opacity:1;mix-blend-mode:normal;fill:none;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-         id="popup-content"
+         style="stroke:url(#linearGradient46);opacity:1;mix-blend-mode:normal;fill:url(#linearGradient14);fill-opacity:1;stroke-width:8;stroke-linejoin:miter;stroke-dasharray:none"
+         id="rect1"
          width="897.87201"
          height="629.66882"
          x="231.06403"
          y="300"
          rx="59.586262"
          ry="58.387135"
-         inkscape:label="content"
-         class="popup-content"
-         transform="translate(-179.55721,-287.80041)"
-         sodipodi:insensitive="true" />
+         inkscape:label="rectGradient"
+         sodipodi:insensitive="true"
+         transform="translate(-179.55721,-287.80041)" />
+      <path
+         style="stroke:none;font-size:879.371px;fill:url(#linearGradient3);stroke-width:71.1469"
+         d="M 394.0206,358.11158 H 501.82162 L 686.12657,552.26491 871.42508,358.11158 H 979.22609 L 740.77224,608.93669 995.12295,880.4015 H 887.322 L 678.67488,658.26213 468.53743,880.4015 H 360.23963 L 625.02277,601.59035 Z"
+         id="text1"
+         aria-label="X"
+         inkscape:label="x"
+         sodipodi:insensitive="true"
+         transform="translate(-179.55721,-287.80041)" />
     </g>
-    <path
-       style="font-size:879.371px;fill:url(#linearGradient3);stroke-width:71.1469"
-       d="M 394.0206,358.11158 H 501.82162 L 686.12657,552.26491 871.42508,358.11158 H 979.22609 L 740.77224,608.93669 995.12295,880.4015 H 887.322 L 678.67488,658.26213 468.53743,880.4015 H 360.23963 L 625.02277,601.59035 Z"
-       id="text1"
-       aria-label="X"
-       inkscape:label="x"
-       sodipodi:insensitive="true" />
   </g>
   <metadata
      id="metadata49">
