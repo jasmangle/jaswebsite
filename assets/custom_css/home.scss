@@ -18,15 +18,22 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     margin: 0;
     padding: 0;
     background-color: #fbc2ff;
 }
 
-.window-outer {
-  animation: fade-in-slide 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, tileShift 25s linear infinite;
+.container {
+  margin: 0;
+  padding: 0;
   max-width: 1200px;
   width: 100%;
+}
+
+.window-outer {
+  animation: fade-in-slide 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, tileShift 25s linear infinite;
+  width: calc(100% - 4px);
   border-color:aqua;
   border: 2px ridge #f691ff;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 5px #aaa inset;
@@ -39,7 +46,7 @@ body {
 // I'm so proud of myself for getting this to work
 .window-outer::before {
   font-family: 'Neufreit';
-  content: attr(title);
+  content: attr(window-title);
   display: block;
   background-color: #f691ff;
   background: linear-gradient(#f691ff, #e861e5);
@@ -56,4 +63,19 @@ body {
   100% {
     background-position: 100px 100px;
   }
+}
+
+.window-btn-exit {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  top: 0.25rem;
+  right: 0.2rem;
+
+  background: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--clr-a-text);
+  text-decoration: none;
 }

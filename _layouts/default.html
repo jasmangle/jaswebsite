@@ -2,8 +2,14 @@
 layout: base
 ---
 <link rel="stylesheet" href="{{ "/assets/custom_css/home.css?v=" | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}">
+<br>
+<div class="container">
+  <h1>test</h1>
 
-
-<div class="window-outer" title="Home!">
-  {{ content }}
+  <div class="window-outer" window-title="Home!">
+    <div class="window-exit">
+      {%- include small-button-res.svg -%}
+    </div>
+    {{ content }}
+  </div>
 </div>
