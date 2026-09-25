@@ -1,68 +1,9 @@
-{%- case site.color-scheme -%}
-  {% when "", nil, false, 0, empty %}
-    {% assign ColorScheme = "auto" %}
-  {% else %}
-    {% assign ColorScheme = site.color-scheme %}
-{%- endcase -%}
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: base
+---
+<link rel="stylesheet" href="{{ "/assets/custom_css/home.css?v=" | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}">
 
-    {%- include seo-custom.html -%}
-    
-    <title>{{ page.title }} | {{ site.title_suffix }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/colors-ColorScheme.css" | replace: "ColorScheme", ColorScheme | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}">
 
-    <link rel="preload" href="{{site.logo_compressed | relative_url}}" as="image">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    {%- include head-custom.html -%}
-  </head>
-  <body>
-    <div id="top-gradient"></div>
-    <div class="wrapper">
-      <div class="sidebar">
-        <header>
-          {%- if site.logo -%}
-            <img class="img-circle" loading="lazy" src="{{site.logo_compressed | relative_url}}" alt="Logo">
-          {%- endif -%}
-          <a class="svg-name-logo" href="{{ "/" | absolute_url }}" aria-label="Navigate to home page" style=" color:white;">
-            {%- include logo_svg.html logo_id="svg-name-logo-det" -%}
-          </a>
-
-          {%- if site.email -%}
-            <p class="addr">
-              <i class="fa-regular fa-envelope"></i>&nbsp;
-              <span id="email-contents"><button type="button" id="show-email">Show email</button></span>
-              <noscript><br>(enable javascript)</noscript>
-            </p>
-          {%- endif -%}
-
-          <p>{{ site.description_html | default: site.github.project_tagline }}</p>
-
-          {%- include sidebar.html -%}
-
-        </header>
-
-        {%- include links-mobile.html -%}
-
-        <div class="sidebar-footer">
-          {%- include footer.html -%}
-        </div>
-      </div>
-      <section>
-      {{ content }}
-      </section>
-      <footer>
-        {%- include footer.html -%}
-      </footer>
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    <script src="{{ "/assets/js/common.js?v=" | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}"></script>
-  </body>
-</html>
+<div class="window-outer" title="Home!">
+  {{ content }}
+</div>

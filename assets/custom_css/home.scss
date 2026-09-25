@@ -1,0 +1,59 @@
+---
+---
+// BEGIN Home Page
+
+@keyframes fade-in-slide {
+  0% {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: #fbc2ff;
+}
+
+.window-outer {
+  animation: fade-in-slide 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, tileShift 25s linear infinite;
+  max-width: 1200px;
+  width: 100%;
+  border-color:aqua;
+  border: 2px ridge #f691ff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 5px #aaa inset;
+
+  background-color: #feeaff;
+  background-image: url("{{ '/assets/img/ui/tile-bg.png?v=' | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}");
+  background-size: 30px;
+}
+
+// I'm so proud of myself for getting this to work
+.window-outer::before {
+  font-family: 'Neufreit';
+  content: attr(title);
+  display: block;
+  background-color: #f691ff;
+  background: linear-gradient(#f691ff, #e861e5);
+  color: white;
+  padding: 0.2rem 0.25rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-bottom: 2px ridge #f691ff;
+}
+
+@keyframes tileShift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100px 100px;
+  }
+}

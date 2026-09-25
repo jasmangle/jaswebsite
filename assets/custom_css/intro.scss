@@ -1,0 +1,53 @@
+---
+---
+
+// Intro Page
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #fbc2ff
+}
+
+foreignObject.popup-content {
+  padding: 1em;
+  font-weight: 600;
+  color: white;
+  font-size: 2em;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  font-family: "Neufreit"
+}
+
+.intro-popup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+// Animations
+
+@keyframes slide-in-fwd-bottom {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(800px);
+            transform: translateZ(-1400px) translateY(800px);
+    opacity: 0;
+    scale: 50%
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.slide-in-fwd-bottom {
+	animation: slide-in-fwd-bottom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+// END Intro Page
