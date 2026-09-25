@@ -7,7 +7,7 @@ layout: intro_disclaimer
 
 Just so ya know, this website contains...
 
-- Many images
+- Many images (mostly SVGs)
 - Flashing images
 - Extreme levels of cuteness
 - Sounds + music with autoplay
@@ -15,6 +15,6 @@ Just so ya know, this website contains...
 - Rainbows
 - Nerd stuff
 - Organic non-AI content
-- A bit of JavaScript (optional)
+- Very little JavaScript
 
 <a href="home">LEMME INNNNN</a>
