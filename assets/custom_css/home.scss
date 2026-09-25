@@ -31,16 +31,32 @@ body {
   width: 100%;
 }
 
+.slide-anim {
+  animation: fadeInSlide 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+}
+
+@keyframes tileShift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30px 30px;
+  }
+}
+
+.tile-shift {
+  animation: tileShift 5s linear infinite;
+  background-color: #feeaff;
+  background-image: url("{{ '/assets/img/ui/tile-bg.png?v=' | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}");
+  background-size: 30px;
+}
+
 .window-outer {
-  animation: fadeInSlide 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, tileShift 5s linear infinite;
   width: calc(100% - 4px);
   border-color:aqua;
   border: 2px ridge #f691ff;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 5px #aaa inset;
-
-  background-color: #feeaff;
-  background-image: url("{{ '/assets/img/ui/tile-bg.png?v=' | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}");
-  background-size: 30px;
+  background-color: white;
 }
 
 // I'm so proud of myself for getting this to work
@@ -56,14 +72,6 @@ body {
   border-bottom: 2px ridge #f691ff;
 }
 
-@keyframes tileShift {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 30px 30px;
-  }
-}
 
 .window-btn-exit {
   margin: 0;

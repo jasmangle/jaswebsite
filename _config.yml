@@ -82,7 +82,7 @@ jekyll-minifier:
 sidebar_links:
   - name: Home
     icon: <i class="fa-solid fa-fw fa-home"></i>
-    link: /
+    link: /home/
   - name: Coursework
     icon: <i class="fa-solid fa-fw fa-graduation-cap"></i>
     link: /coursework/
