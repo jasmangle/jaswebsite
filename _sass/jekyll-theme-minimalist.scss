@@ -57,23 +57,23 @@ a:hover small {
 
 // added
 p.link {
-  margin:0 0 4px;
+  margin:0 0;
 }
 
 // added
 ul.link {
   list-style-type: none; /* Remove bullets */
   margin: 0; /* To remove default bottom margin */ 
-  padding: 0.4px; /* To remove default left padding */
+  padding: 0; /* To remove default left padding */
 }
 
-ul.link li + li {
-  margin-top: 6px;
-}
+// ul.link li + li {
+//   margin-top: 6px;
+// }
 
-ul.link:last-child {
-  margin-bottom: 6px;
-}
+// ul.link:last-child {
+//   margin-bottom: 6px;
+// }
 
 .wrapper {
   width:860px;
@@ -255,9 +255,9 @@ footer {
     top:52px;
   }
   
-  .link-wrapper {
-    display: none !important;
-  }
+  // .link-wrapper {
+  //   display: none !important;
+  // }
 
   .img-circle {
     display: none !important;
@@ -282,14 +282,14 @@ footer {
   }
 }
 
-.link-wrapper-mobile {
-  margin-bottom: 20px;
-}
+// .link-wrapper-mobile {
+//   margin-bottom: 20px;
+// }
 
 @media print, screen and (min-width: 961px) {
-  .link-wrapper-mobile {
-    display: none !important;
-  }
+  // .link-wrapper-mobile {
+  //   display: none !important;
+  // }
 }
 
 @media print, screen and (max-width: 480px) {

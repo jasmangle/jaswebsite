@@ -76,7 +76,7 @@ body {
   background: linear-gradient(#f691ff, #e861e5);
   color: white;
   padding: 0.2rem 0.25rem;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 3px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.23);
   border-bottom: 2px ridge #f691ff;
 }
 
@@ -126,7 +126,6 @@ $responsive-sizes: (
   }
 }
 
-
 .window-btn-exit {
   margin: 0;
   padding: 0;
@@ -148,4 +147,42 @@ $responsive-sizes: (
 
 .window-btn-exit:active g.btn-raise {
   filter: contrast(0.5);
+}
+
+// Sidenav
+
+.link-wrapper {
+  font-family: 'Neufreit';
+}
+
+.link-wrapper li {
+  display: block;
+  background-color: #f691ff;
+  background: linear-gradient(#ca91ff, #fb8cf9);
+  border: 1px ridge #afafaf;
+  margin: 0 !important;
+
+  a {
+    color: white !important;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+  }
+  
+}
+
+.link-wrapper li:hover {
+
+}
+
+.link-wrapper:not(.no-header)::before {
+  display: block;
+  background-color: #f691ff;
+  background: linear-gradient(#da6dfb, #fb8cf9);
+  //border: 1px solid #920b8f;
+  margin: 0 !important;
+  color: white;
+  text-align: center;
+  content: attr(header)
 }
