@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+tile_bg: true
 ---
 
 <div class="home-grid">
