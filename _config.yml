@@ -97,18 +97,22 @@ sidebar_links:
     link: /contact/
   
 sidebar:
-  - name: Twitch
-    icon: <i class="fa-brands fa-fw fa-twitch"></i>
-    link: https://www.twitch.tv/jasmangle
-  - name: Bluesky
-    icon: <i class="fa-brands fa-fw fa-bluesky"></i>
-    link: https://bsky.app/profile/angle.dev
-  - name: Instagram
-    icon: <i class="fa-brands fa-fw fa-instagram"></i>
-    link: https://instagram.com/jasmangle
+  - name: Last.fm
+    icon: <i class="fa-brands fa-fw fa-lastfm"></i>
+    link: https://www.last.fm/user/ngl_
   - name: GitHub
     icon: <i class="fa-brands fa-fw fa-github"></i>
     link: https://github.com/jasmangle
+  - name: Bluesky
+    icon: <i class="fa-brands fa-fw fa-bluesky"></i>
+    link: https://bsky.app/profile/angle.dev
+  - name: Twitch
+    icon: <i class="fa-brands fa-fw fa-twitch"></i>
+    link: https://www.twitch.tv/jasmangle
+  - name: Instagram
+    icon: <i class="fa-brands fa-fw fa-instagram"></i>
+    link: https://instagram.com/jasmangle
+  
 
 # SEO Tag Processing Information
 twitter:

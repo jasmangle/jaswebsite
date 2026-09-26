@@ -177,7 +177,7 @@ $responsive-sizes: (
 }
 
 .link-wrapper li:hover {
-
+  // gotta do somethin here
 }
 
 .link-wrapper:not(.no-header)::before {
@@ -189,4 +189,13 @@ $responsive-sizes: (
   color: white;
   text-align: center;
   content: attr(header)
+}
+
+// Header
+
+.header {
+  border-radius: 75px 75px 0 0;
+  height: 10em;
+  background-color: white;
+  border: 2px ridge #ca91ff;
 }
