@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Allow widgets -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' cdn.jsdelivr.net widget.st u.widget.st widget.menal.xyz lastfm-img.freetls.fastly.net jasmangle.atabook.org;"> -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' cdn.jsdelivr.net widget.st u.widget.st widget.menal.xyz lastfm-img.freetls.fastly.net jasmangle.atabook.org; connect-src 'self' widget.st widget.menal.xyz wss://widget.menal.xyz;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' challenges.cloudflare.com cdn.jsdelivr.net widget.st u.widget.st widget.menal.xyz lastfm-img.freetls.fastly.net jasmangle.atabook.org; connect-src 'self' widget.st widget.menal.xyz wss://widget.menal.xyz;">
 
 
     {%- include seo-custom.html -%}
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{{ "/assets/css/colors-ColorScheme.css" | replace: "ColorScheme", ColorScheme | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}">
 
-    <link rel="preload" href="{{site.logo_compressed | relative_url}}" as="image">
+    <!-- <link rel="preload" href="{{site.logo_compressed | relative_url}}" as="image"> -->
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
