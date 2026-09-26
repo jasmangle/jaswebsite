@@ -89,14 +89,20 @@ sidebar_links:
   - name: Blurbs
     icon: <i class="fa-solid fa-fw fa-splotch"></i>
     link: /blurbs/
+  - name: Guestbook
+    icon: <i class="fa-solid fa-fw fa-book"></i>
+    link: /guestbook/
+  - name: Send an E-Mail
+    icon: <i class="fa-solid fa-envelope"></i>
+    link: /contact/
   
 sidebar:
-  - name: LinkedIn
-    icon: <i class="fa-brands fa-fw fa-linkedin"></i>
-    link: https://linkedin.com/in/jasmangle
-  - name: Twitter
-    icon: <i class="fa-brands fa-fw fa-x-twitter"></i>
-    link: https://x.com/jasmangle
+  - name: Twitch
+    icon: <i class="fa-brands fa-fw fa-twitch"></i>
+    link: https://www.twitch.tv/jasmangle
+  - name: Bluesky
+    icon: <i class="fa-brands fa-fw fa-bluesky"></i>
+    link: https://bsky.app/profile/angle.dev
   - name: Instagram
     icon: <i class="fa-brands fa-fw fa-instagram"></i>
     link: https://instagram.com/jasmangle

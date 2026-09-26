@@ -36,7 +36,7 @@ body {
 .container {
   margin: 0;
   padding: 0;
-  max-width: 1200px;
+  max-width: 2000px;
   width: 100%;
 }
 
@@ -61,7 +61,6 @@ body {
 .window-outer {
   position: relative;
   width: calc(100% - 4px);
-  border-color:aqua;
   border: 2px ridge #f691ff;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 5px #aaa inset;
   background-color: white;
@@ -78,6 +77,10 @@ body {
   padding: 0.2rem 0.25rem;
   box-shadow: 0 3px 3px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.23);
   border-bottom: 2px ridge #f691ff;
+}
+
+.window-content {
+  padding: 0.5em;
 }
 
 // Grid stuff (prolly should put in its own file)
@@ -101,6 +104,7 @@ $responsive-sizes: (
   grid-template-columns: repeat($columns, 1fr);
   gap: 0.5em;
   grid-auto-rows: minmax(100px, auto);
+  align-items: start;
 }
 
 .window-outer > .home-grid {
