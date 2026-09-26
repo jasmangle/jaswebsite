@@ -47,8 +47,6 @@ body {
   background-size: 30px;
 }
 
-
-
 .window-outer {
   width: calc(100% - 4px);
   border-color:aqua;
@@ -68,6 +66,48 @@ body {
   padding: 0.2rem 0.25rem;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   border-bottom: 2px ridge #f691ff;
+}
+
+// Grid stuff (prolly should put in its own file)
+
+$columns: 12;
+$responsive-sizes: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px
+);
+
+[class*="col-"] {
+  grid-column-end: span $columns;
+}
+[class*="offset-"] {
+  grid-column-start: auto;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: 0.5em;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+// col-[sm|md|lg]-(1-12)
+@mixin generate-grid($infix: "") {
+  @for $i from 1 through $columns {
+    .col#{$infix}-#{$i} {
+      grid-column-end: span $i;
+    }
+    .offset#{$infix}-#{$i} {
+      grid-column-start: $i + 1;
+    }
+  }
+}
+
+// Run for responsive breakpoints
+@each $name, $width in $responsive-sizes {
+  @media (min-width: $width) {
+    @include generate-grid("-#{$name}");
+  }
 }
 
 
