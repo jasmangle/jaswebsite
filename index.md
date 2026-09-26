@@ -8,13 +8,10 @@ layout: intro_disclaimer
 Just so ya know, this website contains...
 
 - Many images (mostly SVGs)
+- External widgets via iframe
 - Flashing images
+- No ads (ad-blocker may need to be disabled for some widgets to load correctly)
 - Extreme levels of cuteness
-- Sounds + music with autoplay
-- Lots of transgender
-- Rainbows
-- Nerd stuff
 - Organic non-AI content
-- Very little JavaScript
 
 <a href="home">LEMME INNNNN</a>
