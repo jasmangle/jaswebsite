@@ -15,6 +15,15 @@
   }
 }
 
+@keyframes tileShift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30px 30px;
+  }
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -31,13 +40,15 @@ body {
   width: 100%;
 }
 
-@keyframes tileShift {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 30px 30px;
-  }
+.tile-shift {
+  animation: tileShift 5s linear infinite;
+  background-color: #feeaff;
+  background-image: url("{{ '/assets/img/ui/tile-bg.png?v=' | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}");
+  background-size: 30px;
+}
+
+.slide-anim {
+  animation: fadeInSlide 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
 }
 
 .slide-anim-tile-shift {
@@ -48,6 +59,7 @@ body {
 }
 
 .window-outer {
+  position: relative;
   width: calc(100% - 4px);
   border-color:aqua;
   border: 2px ridge #f691ff;
@@ -89,6 +101,10 @@ $responsive-sizes: (
   grid-template-columns: repeat($columns, 1fr);
   gap: 0.5em;
   grid-auto-rows: minmax(100px, auto);
+}
+
+.window-outer > .home-grid {
+  margin: 0.5em;
 }
 
 // col-[sm|md|lg]-(1-12)
