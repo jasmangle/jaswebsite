@@ -240,6 +240,21 @@ $responsive-sizes: (
 
 // jaspondering
 
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-6px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
 .jasponder {
   display: inline-flex;
   flex-direction: column;
@@ -263,6 +278,8 @@ $responsive-sizes: (
     padding: 15px 20px;
     font-size: 14px;
     box-sizing: border-box;
+    animation: float 6s ease-in-out infinite;
+
 
     &:before {
       content: '';
@@ -274,6 +291,8 @@ $responsive-sizes: (
       background: linear-gradient(hsl(283, 100%, 91%), #feeaff);
       // border: 2px solid linear-gradient(#feeaff, #fff6ff);
       border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+      animation-delay: 250ms;
     }
 
     &:after {
@@ -286,6 +305,8 @@ $responsive-sizes: (
       background: linear-gradient(hsl(283, 100%, 91%), #feeaff);
       // border: 2px solid linear-gradient(#feeaff, #fff6ff);
       border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+      animation-delay: 750ms;
     }
   }
 }
