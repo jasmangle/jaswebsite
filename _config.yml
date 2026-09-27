@@ -115,6 +115,10 @@ sidebar:
   - name: Instagram
     icon: <i class="fa-brands fa-fw fa-instagram"></i>
     link: https://instagram.com/jasmangle
+  - name: Twitter
+    icon: <i class="fa-brands fa-fw fa-twitter"></i>
+    link: https://twitter.com/jasmangle
+    
   
 
 # SEO Tag Processing Information
