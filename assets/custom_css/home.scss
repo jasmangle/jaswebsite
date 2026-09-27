@@ -129,6 +129,33 @@ $responsive-sizes: (
   }
 }
 
+.window-btn-rss {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  top: 0.275rem;
+  right: 0.2rem;
+
+  background: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--clr-a-text);
+  text-decoration: none;
+
+  g.btn-raise {
+    filter: hue-rotate(90deg);
+  }
+
+  &:hover g.btn-raise {
+    filter: hue-rotate(90deg) contrast(1.5);
+  }
+}
+
+.window-btn-rss:active g.btn-raise {
+  filter: contrast(0.5);
+}
+
 .window-btn-exit {
   margin: 0;
   padding: 0;
