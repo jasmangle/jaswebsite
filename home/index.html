@@ -7,8 +7,15 @@ tile_bg: true
 <div class="home-grid">
   <div class="window-outer col-12 col-lg-6">
     <div class="window-content">
-        <h1>Heyoooo!!!</h1>
-        Home content will go here wahoo! 
-      </div>
+      <h1>Heyoooo!!!</h1>
+      Home content will go here wahoo! 
+    </div>
+  </div>
+  <div class="col-12 col-lg-6">
+    <div class="window-content">
+      <canvas id="jascube" style="width: 100%;"></canvas>
+      <script defer src="{{ "/assets/js/gl-matrix-min.js" | relative_url }}"></script>
+      <script defer src="{{ "/assets/js/jascube/jascube.js" | relative_url }}"></script>
+    </div>
   </div>
 </div>
