@@ -64,24 +64,69 @@ fetch("https://status.cafe/users/jasmangle/status.json")
     }
     document.getElementById("statuscafe-username").innerHTML = '<a href="https://status.cafe/users/jasmangle" target="_blank">' + r.author + '</a> ' + r.face + ' ' + r.timeAgo
     document.getElementById("statuscafe-content").innerHTML = r.content
-  })
+  });
+
+// makes a string like "X days ago"
+function timeAgo(input) {
+  const date = new Date(Date.UTC(1970, 0, 1, 0, 0, input));
+  //const date = (input instanceof Date) ? input : new Date(input);
+  const formatter = new Intl.RelativeTimeFormat('en');
+  const ranges = {
+    days: 3600 * 24,
+    hours: 3600,
+    minutes: 60,
+    seconds: 1
+  };
+  const secondsElapsed = (date.getTime() - Date.now()) / 1000;
+  for (let key in ranges) {
+    if (ranges[key] < Math.abs(secondsElapsed)) {
+      const delta = secondsElapsed / ranges[key];
+      return formatter.format(Math.round(delta), key);
+    }
+  }
+}
 
 // Scribbly scrobbly
 const getTrack = async () => {
     const request = await fetch("https://lastfm-api.angle.dev/?name=ngl_");
     const json = await request.json();
 
+    if (json.hasOwnProperty('error')) {
+      document.getElementById("listening").innerHTML = `
+        <div id="trackInfo">
+        <p id="artistName">Oops, I encountered an error.</p>
+        </div>
+      `;
+    }
+
     let isPlaying = json.data['@attr']?.nowplaying || false;
 
     // TODO add "x minutes/hours/days ago"
+    var timeStr = '';
+    if (isPlaying) {
+      timeStr = '<p id="timeSincePlayed">Now Playing!</p>';
+    } else {
+      timeStr = `<p id="timeSincePlayed">${timeAgo(json.data.date.uts)}</p>`;
+    }
 
+    let trackName = json.data.name;
+    let albumName = json.data.album['#text'];
+    var albumStr = '';
+    if (json.data.album['#text'] != trackName) {
+      albumStr = `<p id="albumName">${albumName}</p>`
+    }
+
+    let container = document.getElementById("listening");
+    container.href = json.data.url;
     document.getElementById("listening").innerHTML = `
     <img src="${json.data.image[1]['#text']}">
     <div id="trackInfo">
-    <h3 id="trackName">${json.data.name}</h3>
+    <h3 id="trackName">${trackName}</h3>
+    ${albumStr}
     <p id="artistName">${json.data.artist['#text']}</p>
+    ${timeStr}
     </div>
     `
 };
 getTrack();
-setInterval(() => { getTrack(); }, 30000);
+setInterval(() => { getTrack(); }, 60000);
