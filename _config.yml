@@ -86,12 +86,12 @@ sidebar_links:
   - name: About Me
     icon: <i class="fa-solid fa-fw fa-person"></i>
     link: /about/
-  - name: Coursework
-    icon: <i class="fa-solid fa-fw fa-graduation-cap"></i>
-    link: /coursework/
   - name: Blurbs
     icon: <i class="fa-solid fa-fw fa-splotch"></i>
     link: /blurbs/
+  - name: Coursework
+    icon: <i class="fa-solid fa-fw fa-graduation-cap"></i>
+    link: /coursework/
   - name: Guestbook
     icon: <i class="fa-solid fa-fw fa-book"></i>
     link: /guestbook/
@@ -118,7 +118,7 @@ sidebar:
   - name: Twitter
     icon: <i class="fa-brands fa-fw fa-twitter"></i>
     link: https://twitter.com/jasmangle
-    
+
   
 
 # SEO Tag Processing Information
