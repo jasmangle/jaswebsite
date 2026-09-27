@@ -6,7 +6,7 @@ layout: base
 <div class="container">
   <h1>test</h1>
 
-  <div class="home-grid slide-anim">
+  <div class="home-grid">
     {% include header.html %}
     <div class="col-12 col-md-3 col-lg-2">
       <div class="home-grid">
@@ -35,11 +35,11 @@ layout: base
         </div>
       </div>
     </div>
-    <div class="window-outer col-12 col-md-6 col-lg-8 {% if page.tile_bg==true %}tile-shift{% endif %}" window-title="{{ page.title }}">
+    <div class="window-outer slide-anim col-12 col-md-6 col-lg-8" window-title="{{ page.title }}">
       <div class="window-exit">
         {%- include small-button-res.svg -%}
       </div>
-      <div class="window-content">
+      <div class="window-content {% if page.tile_bg==true %}tile-shift{% endif %}">
         {{ content }}
       </div>
     </div>
