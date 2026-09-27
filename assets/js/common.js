@@ -104,7 +104,7 @@ const getTrack = async () => {
     // TODO add "x minutes/hours/days ago"
     var timeStr = '';
     if (isPlaying) {
-      timeStr = '<p id="timeSincePlayed">Now Playing!</p>';
+      timeStr = '<p id="timeSincePlayed" class="rainbow-text">Now Playing!</p>';
     } else {
       timeStr = `<p id="timeSincePlayed">${timeAgo(json.data.date.uts)}</p>`;
     }

@@ -328,11 +328,29 @@ $responsive-sizes: (
 
     p {
       line-height: 1.1;
-      color: var(--clr-text) !important;
+      color: var(--clr-text);
     }
   }
 
   &:hover {
     transform: rotate(-2deg) scale(1.03);
   }
+}
+
+@keyframes rainbowShift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.rainbow-text {
+  animation: rainbowShift 5s linear infinite;
+  background-size: 200% auto;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red, green, blue, indigo, violet);
+  color: transparent !important;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
