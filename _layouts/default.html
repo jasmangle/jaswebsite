@@ -2,10 +2,7 @@
 layout: base
 ---
 <link rel="stylesheet" href="{{ "/assets/custom_css/home.css?v=" | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}">
-<br>
 <div class="container">
-  <h1>test</h1>
-
   <div class="home-grid">
     {% include header.html %}
     <div class="col-12 col-md-3 col-lg-2">
@@ -15,7 +12,6 @@ layout: base
             <a href="https://status.cafe/users/jasmangle.atom">
               {%- include rss-button.svg -%}
             </a>
-            
           </div>
           <div class="window-content">
             <div class="jasponder">

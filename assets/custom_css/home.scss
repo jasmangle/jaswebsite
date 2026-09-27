@@ -223,7 +223,8 @@ $responsive-sizes: (
   border-radius: 60px 60px 0 0;
   background: linear-gradient(hsl(283, 100%, 91%), #feeaff);
   border: 2px ridge #ca91ff;
-  padding: 0 2em;
+  padding: 0.15em 2em;
+  margin-top: 0.3em;
 }
 
 .header-logo {
