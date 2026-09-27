@@ -129,4 +129,4 @@ const getTrack = async () => {
     `
 };
 getTrack();
-setInterval(() => { getTrack(); }, 60000);
+setInterval(() => { getTrack(); }, 45000);
