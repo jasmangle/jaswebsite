@@ -65,3 +65,23 @@ fetch("https://status.cafe/users/jasmangle/status.json")
     document.getElementById("statuscafe-username").innerHTML = '<a href="https://status.cafe/users/jasmangle" target="_blank">' + r.author + '</a> ' + r.face + ' ' + r.timeAgo
     document.getElementById("statuscafe-content").innerHTML = r.content
   })
+
+// Scribbly scrobbly
+const getTrack = async () => {
+    const request = await fetch("https://lastfm-api.angle.dev/?name=ngl_");
+    const json = await request.json();
+
+    let isPlaying = json.data['@attr']?.nowplaying || false;
+
+    // TODO add "x minutes/hours/days ago"
+
+    document.getElementById("listening").innerHTML = `
+    <img src="${json.data.image[1]['#text']}">
+    <div id="trackInfo">
+    <h3 id="trackName">${json.data.name}</h3>
+    <p id="artistName">${json.data.artist['#text']}</p>
+    </div>
+    `
+};
+getTrack();
+setInterval(() => { getTrack(); }, 30000);
