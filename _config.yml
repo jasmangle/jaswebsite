@@ -41,7 +41,7 @@ plugins:
 
 logo: /assets/img/jasmine3.jpg
 logo_compressed: /assets/img/jasmine3.webp
-color-scheme: auto
+color-scheme: light
 
 # Permalinks
 permalink: /:categories/:year/:month/:day/:title/
@@ -82,27 +82,40 @@ jekyll-minifier:
 sidebar_links:
   - name: Home
     icon: <i class="fa-solid fa-fw fa-home"></i>
-    link: /
+    link: /home/
+  - name: About Me
+    icon: <i class="fa-solid fa-fw fa-person"></i>
+    link: /about/
   - name: Coursework
     icon: <i class="fa-solid fa-fw fa-graduation-cap"></i>
     link: /coursework/
   - name: Blurbs
     icon: <i class="fa-solid fa-fw fa-splotch"></i>
     link: /blurbs/
+  - name: Guestbook
+    icon: <i class="fa-solid fa-fw fa-book"></i>
+    link: /guestbook/
+  - name: Send an E-Mail
+    icon: <i class="fa-solid fa-envelope"></i>
+    link: /contact/
   
 sidebar:
-  - name: LinkedIn
-    icon: <i class="fa-brands fa-fw fa-linkedin"></i>
-    link: https://linkedin.com/in/jasmangle
-  - name: Twitter
-    icon: <i class="fa-brands fa-fw fa-x-twitter"></i>
-    link: https://x.com/jasmangle
-  - name: Instagram
-    icon: <i class="fa-brands fa-fw fa-instagram"></i>
-    link: https://instagram.com/jasmangle
+  - name: Last.fm
+    icon: <i class="fa-brands fa-fw fa-lastfm"></i>
+    link: https://www.last.fm/user/ngl_
   - name: GitHub
     icon: <i class="fa-brands fa-fw fa-github"></i>
     link: https://github.com/jasmangle
+  - name: Bluesky
+    icon: <i class="fa-brands fa-fw fa-bluesky"></i>
+    link: https://bsky.app/profile/angle.dev
+  - name: Twitch
+    icon: <i class="fa-brands fa-fw fa-twitch"></i>
+    link: https://www.twitch.tv/jasmangle
+  - name: Instagram
+    icon: <i class="fa-brands fa-fw fa-instagram"></i>
+    link: https://instagram.com/jasmangle
+  
 
 # SEO Tag Processing Information
 twitter:

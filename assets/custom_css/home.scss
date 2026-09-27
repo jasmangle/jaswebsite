@@ -1,0 +1,312 @@
+---
+---
+// BEGIN Home Page
+
+@keyframes fadeInSlide {
+  0% {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tileShift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30px 30px;
+  }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    background-color: #fbc2ff;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  max-width: 2000px;
+  width: 100%;
+}
+
+.tile-shift {
+  animation: tileShift 5s linear infinite;
+  background-color: #feeaff;
+  background-image: url("{{ '/assets/img/ui/tile-bg.png?v=' | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}");
+  background-size: 30px;
+}
+
+.slide-anim {
+  animation: fadeInSlide 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+}
+
+.slide-anim-tile-shift {
+  animation: fadeInSlide 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, tileShift 5s linear infinite;
+  background-color: #feeaff;
+  background-image: url("{{ '/assets/img/ui/tile-bg.png?v=' | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}");
+  background-size: 30px;
+}
+
+.window-outer {
+  position: relative;
+  width: calc(100% - 4px);
+  border: 2px ridge #f691ff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 5px #aaa inset;
+  background-color: white;
+}
+
+// I'm so proud of myself for getting this to work
+.window-outer::before {
+  font-family: 'Neufreit';
+  content: attr(window-title);
+  display: block;
+  background-color: #f691ff;
+  background: linear-gradient(#f691ff, #e861e5);
+  color: white;
+  padding: 0.2rem 0.25rem;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.23);
+  border-bottom: 2px ridge #f691ff;
+}
+
+.window-content {
+  padding: 0.5em;
+}
+
+// Grid stuff (prolly should put in its own file)
+
+$columns: 12;
+$responsive-sizes: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px
+);
+
+[class*="col-"] {
+  grid-column-end: span $columns;
+}
+[class*="offset-"] {
+  grid-column-start: auto;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: 0.5em;
+  align-items: start;
+}
+
+.window-outer > .home-grid {
+  margin: 0.5em;
+}
+
+// col-[sm|md|lg]-(1-12)
+@mixin generate-grid($infix: "") {
+  @for $i from 1 through $columns {
+    .col#{$infix}-#{$i} {
+      grid-column-end: span $i;
+    }
+    .offset#{$infix}-#{$i} {
+      grid-column-start: $i + 1;
+    }
+  }
+}
+
+// Run for responsive breakpoints
+@each $name, $width in $responsive-sizes {
+  @media (min-width: $width) {
+    @include generate-grid("-#{$name}");
+  }
+}
+
+.window-btn-rss {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  top: 0.275rem;
+  right: 0.2rem;
+
+  background: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--clr-a-text);
+  text-decoration: none;
+
+  g.btn-raise {
+    filter: hue-rotate(90deg);
+  }
+
+  &:hover g.btn-raise {
+    filter: hue-rotate(90deg) contrast(1.5);
+  }
+}
+
+.window-btn-rss:active g.btn-raise {
+  filter: contrast(0.5);
+}
+
+.window-btn-exit {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  top: 0.275rem;
+  right: 0.2rem;
+
+  background: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--clr-a-text);
+  text-decoration: none;
+}
+
+.window-btn-exit:hover g.btn-raise {
+  filter: hue-rotate(45deg);
+}
+
+.window-btn-exit:active g.btn-raise {
+  filter: contrast(0.5);
+}
+
+// Sidenav
+
+.link-wrapper {
+  font-family: 'Neufreit';
+}
+
+.link-wrapper li {
+  display: block;
+  background-color: #f691ff;
+  background: linear-gradient(#ca91ff, #fb8cf9);
+  border: 1px ridge #afafaf;
+  margin: 0 !important;
+
+  a {
+    color: white !important;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+  }
+  
+}
+
+.link-wrapper li:hover {
+  // gotta do somethin here
+}
+
+.link-wrapper:not(.no-header)::before {
+  display: block;
+  background-color: #f691ff;
+  background: linear-gradient(#da6dfb, #fb8cf9);
+  //border: 1px solid #920b8f;
+  margin: 0 !important;
+  color: white;
+  text-align: center;
+  content: attr(header)
+}
+
+// Header
+
+.header {
+  border-radius: 60px 60px 0 0;
+  background: linear-gradient(hsl(283, 100%, 91%), #feeaff);
+  border: 2px ridge #ca91ff;
+  padding: 0.15em 2em;
+  margin-top: 0.3em;
+}
+
+.header-logo {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+}
+
+.header-logo svg {
+  max-width: 500px;
+}
+
+// jaspondering
+
+@keyframes float {
+	0% {
+		box-shadow: 1px 2px 8px #b464ff;
+		transform: translatey(0px);
+	}
+	50% {
+    box-shadow: 2px 9px 6px #cd98ff;
+		transform: translatey(-6px);
+	}
+	100% {
+		box-shadow: 1px 2px 8px #b464ff;
+		transform: translatey(0px);
+	}
+}
+
+.jasponder {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  width: 100%;
+  height: auto;
+
+  .jasponder-img {
+    width: 64px; height: 64px;
+  }
+
+  .jasponder-content {
+    // main thought bubble, smol bubbles will be on before/after
+    position: relative; 
+    width: 100%; height: auto;
+    background: linear-gradient(hsl(283, 100%, 91%), #feeaff);
+    border: 1px solid linear-gradient(#ca91ff, #fb8cf9);
+    box-shadow: 1px 2px 8px #b464ff;
+    border-radius: 24px;
+    padding: 15px 20px;
+    font-size: 14px;
+    box-sizing: border-box;
+    animation: float 6s ease-in-out infinite;
+
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      right: 52px;
+      width: 24px;
+      height: 24px;
+      background: linear-gradient(hsl(283, 100%, 91%), #feeaff);
+      // border: 2px solid linear-gradient(#feeaff, #fff6ff);
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+      animation-delay: 250ms;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -25px;
+      right: 45px;
+      width: 20px;
+      height: 20px;
+      background: linear-gradient(hsl(283, 100%, 91%), #feeaff);
+      // border: 2px solid linear-gradient(#feeaff, #fff6ff);
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+      animation-delay: 750ms;
+    }
+  }
+}

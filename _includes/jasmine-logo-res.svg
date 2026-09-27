@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   id="svg-name-logo-det"
+   data-name="Logo"
+   viewBox="0 0 876.5 202.37344"
+   version="1.1"
+   sodipodi:docname="jasmine-logo-res.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   inkscape:export-filename="jasmine-logo.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0148827"
+     inkscape:cx="431.57699"
+     inkscape:cy="219.72984"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg-name-logo-det" />
+  <desc
+     id="desc1">Jasmine Angle</desc>
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+   .cls-1 {
+         font-size: 8em;
+   }
+   .full-name-logo {
+         font-weight:600;
+         fill: var(--clr-a-text);
+         stroke: none
+         font: 15px / 1.5 &quot;Neufreit&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+   }
+   .full-name-logo:hover {
+      fill: var(--clr-a-text-hvr);
+   }
+   .cls-3 {
+         font-size: 8em;
+   }
+   .cls-7 {
+         fill: none;
+   }
+   .cls-6,
+   .cls-7 {
+         stroke-miterlimit: 20;
+   }
+   </style>
+  </defs>
+  <line
+     class="cls-6"
+     y1="185.73848"
+     x2="875"
+     y2="185.73848"
+     stroke-width="3"
+     id="line1"
+     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-linecap:round;stroke-opacity:1"
+     x1="1.5" />
+  <line
+     class="cls-6"
+     x1="466.66"
+     y1="185.73848"
+     x2="875"
+     y2="78.238472"
+     stroke-width="3"
+     id="line2"
+     style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-linecap:round;stroke-opacity:1" />
+  <path
+     class="cls-7"
+     d="m 555.83206,162.54174 c 7.3,0 18.05134,10.51092 9.16794,22.69674"
+     stroke-width="3"
+     id="path2"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-linecap:round;stroke-opacity:1"
+     sodipodi:nodetypes="cc" />
+  <a href="/home/">
+  <g
+     class="full-name-logo"
+     id="g3"
+     transform="translate(1.5,-63.41152)">
+    <text
+       class="cls-1"
+       transform="translate(0.24,239.95)"
+       id="text2"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:130px;font-family:Neufreit;-inkscape-font-specification:'Neufreit, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Jasmine</text>
+    <text
+       class="cls-3"
+       transform="matrix(1,-0.26,0.26,1,510.13,226.39)"
+       id="text3"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:125.817px;font-family:Neufreit;-inkscape-font-specification:'Neufreit, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Angle</text>
+  </g>
+  </a>
+</svg>

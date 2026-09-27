@@ -1,68 +1,62 @@
-{%- case site.color-scheme -%}
-  {% when "", nil, false, 0, empty %}
-    {% assign ColorScheme = "auto" %}
-  {% else %}
-    {% assign ColorScheme = site.color-scheme %}
-{%- endcase -%}
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    {%- include seo-custom.html -%}
-    
-    <title>{{ page.title }} | {{ site.title_suffix }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/colors-ColorScheme.css" | replace: "ColorScheme", ColorScheme | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}">
-
-    <link rel="preload" href="{{site.logo_compressed | relative_url}}" as="image">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    {%- include head-custom.html -%}
-  </head>
-  <body>
-    <div id="top-gradient"></div>
-    <div class="wrapper">
-      <div class="sidebar">
-        <header>
-          {%- if site.logo -%}
-            <img class="img-circle" loading="lazy" src="{{site.logo_compressed | relative_url}}" alt="Logo">
-          {%- endif -%}
-          <a class="svg-name-logo" href="{{ "/" | absolute_url }}" aria-label="Navigate to home page" style=" color:white;">
-            {%- include logo_svg.html logo_id="svg-name-logo-det" -%}
-          </a>
-
-          {%- if site.email -%}
-            <p class="addr">
-              <i class="fa-regular fa-envelope"></i>&nbsp;
-              <span id="email-contents"><button type="button" id="show-email">Show email</button></span>
-              <noscript><br>(enable javascript)</noscript>
-            </p>
-          {%- endif -%}
-
-          <p>{{ site.description_html | default: site.github.project_tagline }}</p>
-
-          {%- include sidebar.html -%}
-
-        </header>
-
-        {%- include links-mobile.html -%}
-
-        <div class="sidebar-footer">
-          {%- include footer.html -%}
+---
+layout: base
+---
+<link rel="stylesheet" href="{{ "/assets/custom_css/home.css?v=" | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}">
+<div class="container">
+  <div class="home-grid">
+    {% include header.html %}
+    <div class="col-12 col-md-3 col-lg-2">
+      <div class="home-grid">
+        <div class="window-outer col-12" window-title="Status">
+          <div class="window-btn">
+            <a href="https://status.cafe/users/jasmangle.atom">
+              {%- include rss-button.svg -%}
+            </a>
+          </div>
+          <div class="window-content">
+            <div class="jasponder">
+              <div class="jasponder-content">
+                <div id="statuscafe-username">Jasmine is pondering...</div>
+                <div id="statuscafe-content"></div>
+              </div>
+              <img class="jasponder-img" src="{{ "/assets/img/jasponder.webp" | relative_url }}">
+            </div>
+          </div>
+        </div>
+        <div class="window-outer col-12" window-title="Navigation">
+          {%- include sidenav.html -%}
+        </div>
+        <div class="col-12" style="margin:0 auto; width:auto; max-width: max-content;">
+          <ws-widget type="hc" iid="16156"></ws-widget>
         </div>
       </div>
-      <section>
-      {{ content }}
-      </section>
-      <footer>
-        {%- include footer.html -%}
-      </footer>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    <script src="{{ "/assets/js/common.js?v=" | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}"></script>
-  </body>
-</html>
+    <div class="window-outer slide-anim col-12 col-md-6 col-lg-8" window-title="{{ page.title }}">
+      <div class="window-exit">
+        {%- include small-button-res.svg -%}
+      </div>
+      <div class="window-content {% if page.tile_bg==true %}tile-shift{% endif %}">
+        {{ content }}
+      </div>
+    </div>
+    <div class="col-12 col-md-3 col-lg-2">
+      <div class="home-grid">
+        <div class="window-outer col-sm-6 col-md-12" window-title="Calendar">
+          <ws-widget type="calendar" iid="16155"></ws-widget>
+        </div>
+        <div class="window-outer col-sm-6 col-md-12" window-title="Now Playing">
+          <ws-widget type="calendar" iid="16160"></ws-widget>
+        </div>
+        <div class="window-outer col-12" window-title="Chat">
+        <ws-widget type="chat" iid="16142" width="100%" height="300px"></ws-widget>
+      </div>
+      </div>
+      
+    </div>
+    <div class="col-12" style="text-align:center;">
+      {%- include footer.html -%}
+    </div>
+  </div>
+
+  
+</div>

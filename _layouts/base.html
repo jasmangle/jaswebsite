@@ -1,0 +1,37 @@
+{%- case site.color-scheme -%}
+  {% when "", nil, false, 0, empty %}
+    {% assign ColorScheme = "auto" %}
+  {% else %}
+    {% assign ColorScheme = site.color-scheme %}
+{%- endcase -%}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Allow widgets -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' cdn.jsdelivr.net widget.st u.widget.st widget.menal.xyz lastfm-img.freetls.fastly.net jasmangle.atabook.org;"> -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' challenges.cloudflare.com jasmangle.com status.cafe cdn.jsdelivr.net widget.st u.widget.st widget.menal.xyz lastfm-img.freetls.fastly.net jasmangle.atabook.org; connect-src 'self' widget.st widget.menal.xyz wss://widget.menal.xyz status.cafe;">
+
+
+    {%- include seo-custom.html -%}
+    
+    <title>{{ page.title }} | {{ site.title_suffix }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/colors-ColorScheme.css" | replace: "ColorScheme", ColorScheme | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}">
+
+    <!-- <link rel="preload" href="{{site.logo_compressed | relative_url}}" as="image"> -->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {%- include head-custom.html -%}
+  </head>
+  <body>
+    {{ content }}
+    <ws-widget type="cursor" iid="16144" embed="script"></ws-widget>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/common.js?v=" | append: site.env.CF_PAGES_COMMIT_SHA | relative_url }}"></script>
+    <script src="https://u.widget.st/ar.js"></script>
+  </body>
+</html>
