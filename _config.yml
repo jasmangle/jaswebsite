@@ -41,7 +41,7 @@ plugins:
 
 logo: /assets/img/jasmine3.jpg
 logo_compressed: /assets/img/jasmine3.webp
-color-scheme: auto
+color-scheme: light
 
 # Permalinks
 permalink: /:categories/:year/:month/:day/:title/
