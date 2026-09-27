@@ -103,7 +103,6 @@ $responsive-sizes: (
   display: grid;
   grid-template-columns: repeat($columns, 1fr);
   gap: 0.5em;
-  grid-auto-rows: minmax(100px, auto);
   align-items: start;
 }
 
@@ -194,8 +193,71 @@ $responsive-sizes: (
 // Header
 
 .header {
-  border-radius: 75px 75px 0 0;
-  height: 10em;
+  border-radius: 60px 60px 0 0;
   background-color: white;
   border: 2px ridge #ca91ff;
+  padding: 0 2em;
+}
+
+.header-logo {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+}
+
+.header-logo svg {
+  max-width: 500px;
+}
+
+// jaspondering
+
+.jasponder {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  width: 100%;
+  height: auto;
+
+  .jasponder-img {
+    width: 64px; height: 64px;
+  }
+
+  .jasponder-content {
+    // main thought bubble, smol bubbles will be on before/after
+    position: relative; 
+    width: 100%; height: auto;
+    background: linear-gradient(hsl(283, 100%, 91%), #feeaff);
+    border: 1px solid linear-gradient(#ca91ff, #fb8cf9);
+    box-shadow: 1px 2px 8px #b464ff;
+    border-radius: 24px;
+    padding: 15px 20px;
+    font-size: 14px;
+    box-sizing: border-box;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      right: 52px;
+      width: 24px;
+      height: 24px;
+      background: linear-gradient(hsl(283, 100%, 91%), #feeaff);
+      // border: 2px solid linear-gradient(#feeaff, #fff6ff);
+      border-radius: 50%;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -25px;
+      right: 45px;
+      width: 20px;
+      height: 20px;
+      background: linear-gradient(hsl(283, 100%, 91%), #feeaff);
+      // border: 2px solid linear-gradient(#feeaff, #fff6ff);
+      border-radius: 50%;
+    }
+  }
 }

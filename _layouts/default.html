@@ -7,11 +7,27 @@ layout: base
   <h1>test</h1>
 
   <div class="home-grid slide-anim">
-    <div class="header col-12">
-      
-    </div>
-    <div class="window-outer col-md-3 col-lg-2" window-title="Navigation">
-      {%- include sidenav.html -%}
+    {% include header.html %}
+    <div class="col-12 col-md-3 col-lg-2">
+      <div class="home-grid">
+        <div class="window-outer col-12" window-title="Status">
+          <div class="window-content">
+            <div class="jasponder">
+              <div class="jasponder-content">
+                <div id="statuscafe-username">Jasmine is pondering...</div>
+                <div id="statuscafe-content"></div>
+              </div>
+              <img class="jasponder-img" src="{{ "/assets/img/jasponder.webp" | relative_url }}">
+            </div>
+          </div>
+        </div>
+        <div class="window-outer col-12" window-title="Navigation">
+          {%- include sidenav.html -%}
+        </div>
+        <div class="col-12" style="margin:0 auto; width:auto; max-width: max-content;">
+          <ws-widget type="hc" iid="16156"></ws-widget>
+        </div>
+      </div>
     </div>
     <div class="window-outer col-12 col-md-6 col-lg-8 {% if page.tile_bg==true %}tile-shift{% endif %}" window-title="{{ page.title }}">
       <div class="window-exit">
@@ -26,7 +42,7 @@ layout: base
         <div class="window-outer col-sm-6 col-md-12" window-title="Calendar">
           <ws-widget type="calendar" iid="16155"></ws-widget>
         </div>
-        <div class="window-outer col-sm-6 col-md-12" window-title="Last Played">
+        <div class="window-outer col-sm-6 col-md-12" window-title="Now Playing">
           <ws-widget type="calendar" iid="16160"></ws-widget>
         </div>
         <div class="window-outer col-12" window-title="Chat">
