@@ -354,3 +354,12 @@ $responsive-sizes: (
   background-clip: text;
   -webkit-background-clip: text;
 }
+
+.full-name-logo {
+  animation: rainbowShift 5s linear infinite;
+  background-size: 200% auto;
+  background-image: linear-gradient(to left, violet, indigo, violet, indigo);
+  color: transparent !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+}

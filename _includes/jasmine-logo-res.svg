@@ -39,14 +39,28 @@
      id="defs1">
     <style
        id="style1">
+  @keyframes rainbowShift {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
    .cls-1 {
          font-size: 8em;
    }
    .full-name-logo {
          font-weight:600;
          fill: var(--clr-a-text);
-         stroke: none
+         stroke: none;
          font: 15px / 1.5 &quot;Neufreit&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+         animation: rainbowShift 5s linear infinite;
+        background-size: 200% auto;
+        background-image: linear-gradient(to left, violet, indigo, violet, indigo);
+        color: transparent !important;
+        background-clip: text;
+        -webkit-background-clip: text;
    }
    .full-name-logo:hover {
       fill: var(--clr-a-text-hvr);
