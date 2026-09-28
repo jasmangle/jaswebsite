@@ -6,7 +6,7 @@ image: btssb-bag.png
 image_alt: Picture of a Baby the Stars Shine Bright bag
 twitter_card: summary_large_image
 twitter_image: btssb-bag.png
-date: 2026-09-23
+date: 2026-09-27
 tags: Lolita BTSSB Coords
 ---
 
