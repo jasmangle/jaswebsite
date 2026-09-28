@@ -25,7 +25,7 @@ Idk why I kinda look like I'm in pain in this picture oops
 My coord is the same as what I wore to take the photo on my website logo! I like the mix of light pink and baby blue ^-^
 
 - **JSK:** [Angelic Pretty Ribbon Shirring (Sax)](https://lolibrary.org/items/ap-ribbon-shirring-jsk-2025)
-- **KC:** [Angelic Pretty Triple Ribbon Headbow](https://lolibrary.org/items/ap-triple-ribbon-head-bow)
+- **KC:** [Angelic Pretty Triple Ribbon Headbow (Pink, not shown in pic)](https://lolibrary.org/items/ap-triple-ribbon-head-bow)
 - **Blouse:** DMFS Lolita
 - **Petti:** [MeLikesTea](https://melikestea.com/product/hybrid-poof-monster-v/)
 - **Shoes:** Angelic Imprint
