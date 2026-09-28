@@ -71,7 +71,7 @@ I absolutely LOVE THIS DRESS SO MUCH!! The crocheted **pink** (not red like the 
 </div>
 
 - **JSK:** [Ribbon Ribbon♡Wrapping Heart JSK (Pink x Mint)](https://lolibrary.org/items/btssb-ribbon-ribbon-wrapping-heart-jsk)
-- **Headdress:** [Ribbon Ribbon ♡ Wrapping Heart Headdress](https://lolibrary.org/items/btssb-ribbon-ribbon-wrapping-heart-headdress)
+- **Headdress:** [Ribbon Ribbon ♡ Wrapping Heart Headdress (Pink x Mint)](https://lolibrary.org/items/btssb-ribbon-ribbon-wrapping-heart-headdress)
 
 Soo.... this is my first entry (besides the shoes) for my mint era! I like having mint as an accent color, since these Angelic Imprint shoes just work sooo well with them and make it all come together. The heart on the front is so cute and both the heart and the bow are detachable! I was super happy that this fit me, especially since I was a little bit over the upper bound on their bust sizing, though it works out perfectly for me!
 
