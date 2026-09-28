@@ -92,13 +92,17 @@ $responsive-sizes: (
   lg: 992px
 );
 
-[class*="col-"] {
-  grid-column-end: span $columns;
-}
-[class*="offset-"] {
-  grid-column-start: auto;
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    grid-column-end: span $i;
+  }
 }
 
+@for $i from 0 through ($columns - 1) {
+  .offset-#{$i} {
+    grid-column-start: #{$i + 1};
+  }
+}
 .home-grid {
   display: grid;
   grid-template-columns: repeat($columns, 1fr);
