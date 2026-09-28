@@ -36,6 +36,12 @@ This video is hella bad but... it exists if you _really_ want to watch it. Next 
 
 I still haven't uploaded the video oops. youtube hard
 
+## [Ruban♡Crème à la Vanille Headdress](https://lolibrary.org/items/btssb-rubancreme-a-la-vanille-headdress)
+
+<a href="btssb-rubancreme-headdress.jpg"><img class="blurb-img" src="btssb-rubancreme-headdress.jpg" alt="Picture of the Ruban Crème à la Vanille Headdress."></a>
+
+I first went into BTSSB with getting these in mind.... of course you saw the title so now you know I absolutely did not leave with JUST this. This kind of pink and blue mix would work PERFECTLY with the coord above (and most of my other pink+blue coords), so I just had to get it!
+
 
 ## Swinging Strawberry's Happy Berry Present JSK
 
