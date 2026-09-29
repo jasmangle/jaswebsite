@@ -191,10 +191,31 @@ $responsive-sizes: (
 
 .link-wrapper li {
   display: block;
+  position: relative;
   background-color: #f691ff;
   background: linear-gradient(#ca91ff, #fb8cf9);
   border: 1px ridge #afafaf;
   margin: 0 !important;
+  z-index: 100;
+  
+  &:before {
+    border-radius: inherit;
+    content: '';    
+    display: block;
+    animation: rainbowShift 5s linear infinite;
+    background-size: 200% auto;
+    background-image: linear-gradient(to left, #8809ff, #ff27fb, #8809ff);
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    z-index: -100;
+    -moz-transition: opacity .1s ease-in-out;
+    -webkit-transition: opacity .1s ease-in-out;
+    transition: opacity .1s ease-in-out;
+  }
 
   a {
     color: white !important;
@@ -203,11 +224,36 @@ $responsive-sizes: (
     display: block;
     margin: 0;
   }
-  
-}
 
-.link-wrapper li:hover {
-  // gotta do somethin here
+  &.active a {
+    animation: rainbowShift 5s linear infinite;
+    background-size: 200% auto;
+    background-image: linear-gradient(to left, #8809ff, #ff27fb, #8809ff);
+    color: transparent !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  &.active {
+    background-color: #f691ff;
+    background: linear-gradient(#e1c1ff, #ffbdfe);
+  }
+
+  &:hover {
+     &:before {
+       opacity: 1; 
+     }
+
+     a {
+      animation: rainbowShift 5s linear infinite;
+      background-size: 200% auto;
+      background-image: linear-gradient(to left, #f0e1ff, #ffe2ff, #f0e1ff);
+      color: transparent !important;
+      background-clip: text;
+      -webkit-background-clip: text;
+     }
+  }
+  
 }
 
 .link-wrapper:not(.no-header)::before {
