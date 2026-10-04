@@ -5,17 +5,24 @@ tile_bg: true
 ---
 
 <div class="home-grid">
-  <div class="window-outer col-12 col-lg-6">
+  <div class="window-outer col-12 col-lg-8">
     <div class="window-content">
       <h1>Heyoooo!!!</h1>
-      Home content will go here wahoo! 
+      <h2>Welcome to my site!</h2>
+      <p>I'm Jasmine, a silly lolita fashion enthusiast with engineering on the side in the Bay Area! </p>
+      <p>This is my little corner of the interwebz, where I plan to share most of my stuff rather than having to rely on specific social media platforms. </p>
     </div>
   </div>
-  <div class="col-12 col-lg-6">
-    <div class="window-content">
-      <canvas id="jascube" style="width: 100%;"></canvas>
+  <div class="col-12 col-lg-4">
+    <div class="window-content" style="display: flex;">
+      <canvas id="jascube" style="margin:0 auto;width: 80%;aspect-ratio:1;"></canvas>
       <script defer src="{{ "/assets/js/gl-matrix-min.js" | relative_url }}"></script>
       <script defer src="{{ "/assets/js/jascube/jascube.js" | relative_url }}"></script>
     </div>
   </div>
+  <!-- <div class="home-button col-12 col-md-4">
+    <a href="/">
+      test
+    </a>
+  </div> -->
 </div>

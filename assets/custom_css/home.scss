@@ -457,3 +457,17 @@ $responsive-sizes: (
     text-align: center;
   }
 }
+
+.home-button {
+  padding: 0.5em;
+  background-color: #f691ff;
+  background: linear-gradient(#b668ff, #e96bff);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 5px #aaa inset;
+
+  a {
+    width: 100%; height: 100%;
+  }
+}
