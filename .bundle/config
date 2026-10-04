@@ -1,3 +1,5 @@
 ---
 BUNDLE_FORCE_RUBY_PLATFORM: "true"
 BUNDLE_USER_CACHE: ".bundle/cache"
+BUNDLE_PATH: "vendor/bundle"
+BUNDLE_CACHE_ALL: "true"
