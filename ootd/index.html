@@ -1,0 +1,52 @@
+---
+title: OOTD Coord Archive
+layout: ootd_archive
+pagination:
+  category: ootd
+  enabled: true
+  per_page: 30
+  permalink: '/page/:num/'
+  title: ':title - Page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+---
+
+<h2>Surely having an OOTD archive section on here will encourage me to wear my lolita fits more often :D</h2>
+
+<p>My wardrobe isn't super big at the moment. Expect to see duplicate coords here and there :P</p>
+
+<div class="ootd-grid">
+    {% for post in paginator.posts %}
+    <div class="ootd-post col-12 col-sm-6 col-md-4">
+        <a href="{{ post.url }}">
+            <img class="blurb-img" style="text-align: center; width: 100%;" src="{{ image }}" alt="{{ post.description }}" />
+            <div>{{ post.title }}</div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a class="button prev-page" href="{{ paginator.previous_page_path | relative_url }}">&laquo; Previous Page</a>
+  {% else %}
+    <span class="button prev-page disabled">&laquo; Previous Page</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="button active">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a class="button" href="{{ paginator.first_page_path }}">{{ page }}</a>
+    {% else %}
+      <a class="button" href="{{ paginator.first_page_path }}page/{{ page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a class="button next-page" href="{{ paginator.next_page_path | relative_url }}">Next Page &raquo;</a>
+  {% else %}
+    <span class="button next-page disabled">Next Page &raquo;</span>
+  {% endif %}
+</div>

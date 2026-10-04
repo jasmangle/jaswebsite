@@ -82,30 +82,17 @@
 </script>
 
 {%- if page.layout == "blurbs_list" or page.layout == "post_blurb" -%}
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "Blog",
-"@id": "https://jasmangle.com/blurbs/#Blog",
-"mainEntityOfPage": "https://jasmangle.com/blurbs/",
-"name": "Jasmine Angle's Blurbs",
-"description": "A collection of smaller writings, potentially useful files/scripts, or things pertaining to my interests.",
-"author": {"@id": "https://jasmangle.com/#Person"} {%- if page.layout == "blurbs_list" -%},
-"blogPost": [
-  {%- for post in site.posts -%}
-  {%- include schema_blog_posting.html page=post body=false -%}
-  {%- endfor -%}
-]
+{% include schema/schema_blurbs_list.html %}
 {%- endif -%}
-}
-</script>
+
+{%- if page.layout == "ootd_archive" or page.layout == "post_ootd" -%}
+{% include schema/schema_ootd_list.html %}
 {%- endif -%}
 
 {%- if page.layout == "post_blurb" -%}
 <script type="application/ld+json">
-{% include schema_blog_posting.html page=page body=true %}
+{% include schema/schema_blog_posting.json page=page body=true %}
 </script>
 {%- endif -%}
-
 
 <!-- End Jasmine's SEO -->

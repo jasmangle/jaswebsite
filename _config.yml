@@ -38,6 +38,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
   - jekyll-minifier
+  - jekyll-paginate-v2
 
 logo: /assets/img/jasmine3.jpg
 logo_compressed: /assets/img/jasmine3.webp
@@ -76,8 +77,6 @@ jekyll-minifier:
   preserve_line_breaks: false       # Default: false
   simple_boolean_attributes: false  # Default: false
   compress_js_templates: false      # Default: false
-  uglifier_args:
-    harmony: true
 
 sidebar_links:
   - name: Home
@@ -89,6 +88,9 @@ sidebar_links:
   - name: Blurbs
     icon: <i class="fa-solid fa-fw fa-splotch"></i>
     link: /blurbs/
+  - name: OOTD Archive
+    icon: <i class="fa-solid fa-fw fa-child-dress"></i>
+    link: /ootd/
   - name: Coursework
     icon: <i class="fa-solid fa-fw fa-graduation-cap"></i>
     link: /coursework/
@@ -136,13 +138,34 @@ social:
     - https://bsky.app/profile/angle.dev
     - https://orcid.org/0009-0008-0282-2629
 
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: '/page/:num/'
+  title: ':title - Page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
+# Adding OOTD #
+collections:
+  - ootd
+  - blurbs
+
 # RSS Feed
 author: jasmangle
 
 feed:
-  path: /feed.xml
-  categories:
-    - blurbs
+  collections:
+    blurbs:
+      path: /feed.xml
+      categories:
+        - blurbs
+    ootd:
+      path: /ootd.xml
+      categories:
+        - ootd
 
 locale: en_US
 

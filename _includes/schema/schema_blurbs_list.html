@@ -1,0 +1,23 @@
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Blog",
+"@id": "https://jasmangle.com/blurbs/#Blog",
+"mainEntityOfPage": "https://jasmangle.com/blurbs/",
+"name": "Jasmine Angle's Blurbs",
+"description": "A collection of smaller writings, lolita dress updates, potentially useful files/scripts, or things pertaining to my interests.",
+"author": {"@id": "https://jasmangle.com/#Person"} {%- if page.layout == "blurbs_list" -%},
+
+{%- comment -%} - [I should really parameterize this for page.categories] We need to find out the count of blog posts because of the annoying last comma in the list {%- endcomment -%}
+{%- assign postMaxIndex = site.categories.blurbs.size -%}
+{%- assign postIndex = 0 -%}
+"blogPost": [
+  {%- for post in site.categories.blurbs -%}
+  {% assign postIdx = postIdx | plus: 1 %}
+  {%- include schema/schema_blog_posting.json page=post body=false -%}
+  {% if postIdx < postMaxIndex %},{% endif %}
+  {%- endfor -%}
+]
+{%- endif -%}
+}
+</script>

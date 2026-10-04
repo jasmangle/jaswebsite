@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<!-- my oh my this is horrendous -->
+{% if page.categories %}
+  {% assign category = page.categories[0] %}
+  {% assign posts = site.categories[category] %}
+  {% for post in posts %}
+    {% if post.url == page.url %}
+      {% assign post_index0 = forloop.index0 %}
+      {% assign post_index1 = forloop.index %}
+    {% endif %}
+  {% endfor %}
+  {% for post in posts %}
+    {% if post_index0 == forloop.index %}
+      {% assign next_post = post %}
+    {% endif %}
+    {% if post_index1 == forloop.index0 %}
+      {% assign prev_post = post %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+<a href="/ootd"><i class="fa-solid fa-arrow-left"></i> Back to All Coords</a>
+
+<header style="text-align: center;">
+  <hgroup>
+    <h1>{{ page.date | date: "%B %-d, %Y" }}</h1>
+  </hgroup>
+  <div class="pagination">
+    {% if prev_post %}
+      <a class="button" href="{{ prev_post | relative_url }}">Previous Post</a>
+    {% else %}
+      <span class="button disabled">Previous Post</span>
+    {% endif %}
+    {%- if page.instagram_link -%}
+    <a class="button" href="{{ page.instagram_link }}" target="_blank"><i class="fa-brands fa-fw fa-instagram"></i> View on Instagram</a>
+    {% endif %}
+    {% if next_post %}
+      <a class="button" href="{{ next_post | relative_url }}">Next Post</a>
+    {% else %}
+      <span class="button disabled">Next Post</span>
+    {% endif %}
+  </div>
+</header>
+
+<article>
+  <div style="text-align:center; width: 100%; margin: 1em;">
+    <img class="blurb-img" style="text-align: center;" src="{{ image }}" alt="{{ page.description }}" />
+  </div>
+  {{ content }}
+</article>
+
+<hr/>
+<ws-widget type="comments" iid="16145"></ws-widget>

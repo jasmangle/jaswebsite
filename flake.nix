@@ -50,20 +50,5 @@
           };
         };
 
-        packages = {
-          default = rubyEnv;
-
-          docker = pkgs.dockerTools.buildImage {
-            name = "jaswebsite";
-            tag = "latest";
-            fromImage = pkgs.dockerTools.pullImage {
-              imageName = "ubuntu";
-              finalImageTag = "20.04";
-              imageDigest = "sha256:a06ae92523384c2cd182dcfe7f8b2bf09075062e937d5653d7d0db0375ad2221";
-              sha256 = "sha256-d249m1ZqcV72jfEcHDUn+KuOCs8WPaBJRcZotJjVW0o=";
-            };
-            config.Cmd = [ "${rubyEnv}/bin/bundler" ];
-          };
-        };
       });
 }

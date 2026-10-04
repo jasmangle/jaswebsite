@@ -12,5 +12,5 @@
   {%- endif -%}
   "mainEntityOfPage": {{ include.page.url | absolute_url | jsonify}},
   "inLanguage": "en-US",
-  "isPartOf": {"@id": "https://jasmangle.com/blurbs/#Blog" }
+  "isPartOf": {"@id": "https://jasmangle.com/{{ include.page.categories | first }}/#Blog" }
 }

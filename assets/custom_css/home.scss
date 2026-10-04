@@ -413,3 +413,47 @@ $responsive-sizes: (
   background-clip: text;
   -webkit-background-clip: text;
 }
+
+// Blog Pagination stuff
+
+.pagination {
+  text-align: center;
+}
+
+.button {
+  padding: 0.5em;
+  background-color: #f691ff;
+  background: linear-gradient(#b668ff, #e96bff);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 5px #aaa inset;
+
+  &.active {
+    border: 2px ridge rgb(144, 12, 245);
+  }
+
+  &:not(.disabled) {
+    &:hover, &:focus {
+      color: white !important;
+      background: linear-gradient(#ce9aff, #ed8aff);
+    }
+  }
+
+  &.disabled {
+    // Disabled style
+    background: linear-gradient(#594a67, #534057);
+    color: #aaa;
+  }
+}
+
+.ootd-grid {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: 0.5em;
+  align-items: start;
+
+  .ootd-post {
+    text-align: center;
+  }
+}

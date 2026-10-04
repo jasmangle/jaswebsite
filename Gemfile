@@ -11,7 +11,6 @@ gem "jekyll"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima"
 gem "jekyll-remote-theme", :git => 'git@github.com:jasmangle/jekyll-remote-theme.git'
-gem 'jekyll-sass-converter', ">= 3.1.0"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
@@ -20,6 +19,7 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem 'jekyll-postfiles'
   gem 'jekyll-environment-variables'
+  gem 'jekyll-paginate-v2', '>= 3.0'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -35,3 +35,6 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem 'jekyll-sitemap'
 gem 'jekyll-minifier'
 gem 'google-protobuf', ">= 4.31.1"
+
+gem "sass-embedded", "= 1.89.2"
+
