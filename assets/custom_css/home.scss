@@ -366,7 +366,7 @@ $responsive-sizes: (
   align-items: start;
   width: 100%;
   text-decoration: none;
-  transition: transform .2s ease-in-out;
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
 
   #trackInfo {
     display: block;
@@ -459,6 +459,7 @@ $responsive-sizes: (
 }
 
 .home-button {
+  margin: 0.5em;
   padding: 0.5em;
   background-color: #f691ff;
   background: linear-gradient(#b668ff, #e96bff);
@@ -466,8 +467,27 @@ $responsive-sizes: (
   border-radius: 5px;
   text-decoration: none;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 5px #aaa inset;
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+
+  h3, h4, h5, h6 {
+    color: white;
+    text-align: center;
+  }
 
   a {
+    display: block;
     width: 100%; height: 100%;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  .post-img {
+    max-height: 250px;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    transform: rotate(-2deg) scale(1.03);
   }
 }

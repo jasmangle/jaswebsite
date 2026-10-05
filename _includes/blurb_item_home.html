@@ -1,0 +1,9 @@
+<div class="home-grid">
+  {% if post.image %}
+  <img src="{{site.url}}{{post.url | relative_url}}{{post.image}}" class="post-img col-12 col-sm-4 col-lg-12" style="text-align:center;" />
+  {% endif %}
+  <div class="col-12 col-sm-8 col-lg-12">
+    [{{post.date | date: "%Y-%m-%d"}}] {{post.title}} <br>
+  {{ post.description }}
+  </div>
+</div>
