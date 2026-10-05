@@ -157,15 +157,8 @@ collections:
 author: jasmangle
 
 feed:
-  collections:
-    blurbs:
-      path: /feed.xml
-      categories:
-        - blurbs
-    ootd:
-      path: /ootd.xml
-      categories:
-        - ootd
+  posts_limit: 15
+  path: /feed.xml
 
 locale: en_US
 
