@@ -13,3 +13,12 @@
     {%- endfor -%}
   </ul>
 </div>
+{% if site.cool_sites %}
+<div class="link-wrapper" header="Other Cool Sites">
+  <ul class="link">
+    {%- for platform in site.cool_sites -%}
+    <li><a href="{{ platform.link }}">{{ platform.icon }}&nbsp;{{ platform.name }}</a></li>
+    {%- endfor -%}
+  </ul>
+</div>
+{% endif %}
