@@ -3,9 +3,10 @@
   <img src="{{site.url}}{{post.url | relative_url}}{{post.image}}" class="post-img col-12 col-sm-4 col-lg-12" style="text-align:center;" />
   {% endif %}
   <div class="col-12 col-sm-8 col-lg-12">
-    [{{post.date | date: "%Y-%m-%d"}}] {{post.title}} <br>
-    <small>
-      {{ post.description }}
-    </small>
+    {% capture default_title %}OOTD {{post.date | date: "%Y-%m-%d"}}{% endcapture %}
+    {{post.date | date: "%B %-d, %Y"}}
+    {%- if post.title != default_title %}
+    {{ post.title }}
+    {% endif %}
   </div>
 </div>

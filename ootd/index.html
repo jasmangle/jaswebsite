@@ -17,10 +17,10 @@ pagination:
 <p>My wardrobe isn't super big at the moment. Expect to see duplicate coords here and there :P</p>
 
 <div class="ootd-grid">
-    {% for post in paginator.posts %}
+    {%- for post in paginator.posts -%}
     <div class="ootd-post col-12 col-sm-6 col-md-4">
         <a href="{{ post.url }}">
-            <img class="blurb-img" style="text-align: center; width: 100%;" src="{{ image }}" alt="{{ post.description }}" />
+            <img class="blurb-img" style="text-align: center; width: 100%;" src="{{site.url}}{{post.url | relative_url}}{{post.image}}" alt="{{ post.description }}" />
             <div>{{ post.title }}</div>
         </a>
     </div>

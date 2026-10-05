@@ -10,7 +10,7 @@ tile_bg: true
       <h1>Heyoooo!!!</h1>
       <h2>Welcome to my site!</h2>
       <p>I'm Jasmine, a silly lolita fashion enthusiast with engineering on the side in the Bay Area! </p>
-      <p>This is my little corner of the interwebz, where I plan to share most of my stuff rather than having to rely on specific social media platforms. </p>
+      <p>This is my little corner of the interwebz, where I plan to share most of my stuff rather than having to rely on specific social media platforms.</p>
     </div>
   </div>
   <div class="col-12 col-lg-4">
@@ -27,6 +27,18 @@ tile_bg: true
         <h3>Latest Blurb</h3>
         <div class="home-button-blurb">
           {%- include blurb_item_home.html post=post -%}
+        </div>
+      </div>
+    </a>
+    {%- endfor -%}
+  </div>
+  <div class="home-button col-12 col-lg-4">
+    {%- for post in site.categories.ootd limit:1 -%}
+    <a href="{{post.url}}">
+      <div class="home-button-content">
+        <h3>Latest OOTD</h3>
+        <div class="home-button-blurb">
+          {%- include ootd_item_home.html post=post -%}
         </div>
       </div>
     </a>

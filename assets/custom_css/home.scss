@@ -469,8 +469,9 @@ $responsive-sizes: (
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 5px #aaa inset;
   transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
 
-  h3, h4, h5, h6 {
-    color: white;
+  h3, h4, h5, h6, small {
+    text-decoration: none;
+    color: white !important;
     text-align: center;
   }
 
