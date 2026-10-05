@@ -1,8 +1,8 @@
 <div class="home-grid" style="text-align:center;">
   {% if post.image %}
-  <img src="{{site.url}}{{post.url | relative_url}}{{post.image}}" class="post-img col-12 col-sm-4 col-lg-12" style="text-align:center;" />
+  <img src="{{site.url}}{{post.url | relative_url}}{{post.image}}" class="post-img col-12 col-sm-12 col-md-4 col-lg-12" style="text-align:center;" />
   {% endif %}
-  <div class="col-12 col-sm-8 col-lg-12">
+  <div class="col-12 col-sm-12 col-md-8 col-lg-12">
     {% capture default_title %}OOTD {{post.date | date: "%Y-%m-%d"}}{% endcapture %}
     {{post.date | date: "%B %-d, %Y"}}
     {%- if post.title != default_title %}

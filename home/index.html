@@ -20,7 +20,7 @@ tile_bg: true
       <script defer src="{{ "/assets/js/jascube/jascube.js" | relative_url }}"></script>
     </div>
   </div>
-  <div class="home-button col-12 col-lg-4">
+  <div class="home-button col-12 col-sm-6 col-md-12 col-lg-4">
     {%- for post in site.categories.blurbs limit:1 -%}
     <a href="{{post.url}}">
       <div class="home-button-content">
@@ -32,7 +32,7 @@ tile_bg: true
     </a>
     {%- endfor -%}
   </div>
-  <div class="home-button col-12 col-lg-4">
+  <div class="home-button col-12 col-sm-6 col-md-12 col-lg-4">
     {%- for post in site.categories.ootd limit:1 -%}
     <a href="{{post.url}}">
       <div class="home-button-content">
