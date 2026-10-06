@@ -452,6 +452,7 @@ $responsive-sizes: (
   grid-template-columns: repeat($columns, 1fr);
   gap: 0.5em;
   align-items: start;
+  margin-bottom: 2em;
 
   .ootd-post {
     text-align: center;
@@ -461,6 +462,11 @@ $responsive-sizes: (
       transform: rotate(-2deg) scale(1.03);
     }
   }
+}
+
+.ootd-img {
+  max-height: 760px;
+  text-align:center;
 }
 
 .home-button {
