@@ -5,8 +5,8 @@
   <div class="col-12 col-sm-12 col-md-8 col-lg-12">
     {% capture default_title %}OOTD {{post.date | date: "%Y-%m-%d"}}{% endcapture %}
     {{post.date | date: "%B %-d, %Y"}}
-    {%- if post.title != default_title %}
-    {{ post.title }}
+    {%- if post.description != default_title %}
+    <small>{{ post.description }}</small>
     {% endif %}
   </div>
 </div>
