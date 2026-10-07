@@ -81,7 +81,7 @@ jekyll-minifier:
 sidebar_links:
   - name: Home
     icon: <i class="fa-solid fa-fw fa-home"></i>
-    link: /home/
+    link: /
   - name: About Me
     icon: <i class="fa-solid fa-fw fa-person"></i>
     link: /about/

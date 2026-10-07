@@ -1,63 +1,18 @@
 ---
-layout: default
-title: Home
-tile_bg: true
 ---
-
-<div class="home-grid">
-  <div class="window-outer col-12 col-lg-8">
-    <div class="window-content">
-      <h1>Heyoooo!!!</h1>
-      <h2>Welcome to my site!</h2>
-      <p>I'm Jasmine, a silly lolita fashion enthusiast with engineering on the side in the Bay Area! </p>
-      <p>This is my little corner of the interwebz, where I plan to share most of my stuff rather than having to rely on specific social media platforms.</p>
-    </div>
-  </div>
-  <div class="col-12 col-lg-4">
-    <div class="window-content" style="display: flex;">
-      <canvas id="jascube" style="margin:0 auto;width: 80%;aspect-ratio:1;"></canvas>
-      <script defer src="{{ "/assets/js/gl-matrix-min.js" | relative_url }}"></script>
-      <script defer src="{{ "/assets/js/jascube/jascube.js" | relative_url }}"></script>
-    </div>
-  </div>
-  <div class="home-button col-12 col-sm-6 col-md-12 col-lg-4">
-    {%- for post in site.categories.blurbs limit:1 -%}
-    <a href="{{post.url}}">
-      <div class="home-button-content">
-        <h3>Latest Blurb</h3>
-        <div class="home-button-blurb">
-          {%- include blurb_item_home.html post=post -%}
-        </div>
-      </div>
-    </a>
-    {%- endfor -%}
-  </div>
-  <div class="home-button col-12 col-sm-6 col-md-12 col-lg-4">
-    {%- for post in site.categories.ootd limit:1 -%}
-    <a href="{{post.url}}">
-      <div class="home-button-content">
-        <h3>Latest OOTD</h3>
-        <div class="home-button-blurb">
-          {%- include ootd_item_home.html post=post -%}
-        </div>
-      </div>
-    </a>
-    {%- endfor -%}
-  </div>
-  <div class="vert-stack col-12 col-sm-6 col-md-12 col-lg-4">
-    <div class="home-button">
-      <a href="/guestbook/">
-        <div class="home-button-content">
-          <h3>Sign my Guestbook</h3>
-        </div>
-      </a>
-    </div>
-    <div class="home-button">
-      <a href="/contact/">
-        <div class="home-button-content">
-          <h3>Send me an E-Mail</h3>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Redirecting...</title>
+<link rel="canonical" href="/home"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="refresh" content="0; url=/" />
+</head>
+<body>
+<p><strong>Redirecting...</strong></p>
+<p><a href='/home'>Click here if you are not redirected.</a></p>
+<script>
+    document.location.href = "/";
+</script>
+</body>
+</html>
