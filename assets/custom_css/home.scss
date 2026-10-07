@@ -286,6 +286,7 @@ $responsive-sizes: (
 
 .header-logo svg {
   max-width: 500px;
+  -webkit-logical-width: 100%;
 }
 
 // jaspondering
